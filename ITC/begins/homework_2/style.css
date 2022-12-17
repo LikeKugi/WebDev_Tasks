@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background: #007765;
+}
+
+.header__content {
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-links {
+    display: flex;
+    list-style: none;
+}
+
+.hd-link {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.container {
+    width: 1219px;
+    margin: 0 auto;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.greeting {
+    background-image: url(img/image.png);
+    padding: 160px 0;
+}
+
+.greeting__header {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.content-header {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+
+.problem {
+    padding-top: 48px;
+    padding-bottom: 92px;
+    background: #EEEEEE;
+}
+
+.text {
+    max-width: 1110px;
+    margin: 16px auto;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.together {
+    background-image: url(img/image\ \(1\).png);
+    padding: 128px 0;
+}
+
+.together-text {
+    margin: 0 auto;
+    max-width: 893px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.pipercoin {
+    padding-top: 48px;
+    padding-bottom: 92px;
+}
+
+.pipercoin-logo-text {
+    margin: 0 auto;
+    max-width: 1110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coin-logo {
+    width: 115px;
+    height: 115px;
+    margin-right: 48px;
+}
+
+.team {
+    background: #EEEEEE;
+    padding-top: 58px;
+    padding-bottom: 30px;
+
+}
+
+.team-units {
+    padding-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.unit {
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 82px;
+}
+
+.unit-photo {
+    width: 168px;
+}
+
+.unit-header {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #007765;
+}
+
+.unit-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.footer {
+    background: #333333;
+    padding-top: 50px;
+    padding-bottom: 62px;
+}
+
+.footer-text {
+    margin: 0 auto;
+    max-width: 540px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
