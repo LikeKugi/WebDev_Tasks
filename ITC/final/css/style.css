@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 22px;
+}
+
+.header {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__info__enter {
+  display: flex;
+  align-items: center;
+}
+.header__info-enter {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 16px;
+  padding: 14px 20px;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: #1D1D1D;
+}
+.header__info-logo {
+  justify-self: start;
+}
+
+.main {
+  flex-grow: 1;
+  background: #F2F2F2;
+  padding-top: 56px;
+  padding-bottom: 100px;
+}
+.main__searching-input {
+  background: inherit;
+  border: 0;
+  border-bottom: 1px solid #757575;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  color: #626262;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.main__restaurants {
+  margin-top: 56px;
+}
+.main__restaurants__header {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1D1D1D;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 16px 0;
+}
+.card__header {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+}
+.card__price {
+  margin: 4px 0;
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+}
+.card__time {
+  font-size: 13px;
+  line-height: 21px;
+  color: #1D1D1D;
+}
+
+.footer {
+  background: #262626;
+  padding-top: 56px;
+  position: relative;
+}
+.footer__line {
+  margin: 40px 0;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+}
+.footer__list {
+  list-style-type: none;
+}
+.footer__list-item {
+  margin: 23px 0;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.footer__list-item:first-child {
+  margin-top: 0;
+}
+.footer__select {
+  margin-bottom: 32px;
+  max-width: 227px;
+  min-width: 173px;
+  height: 40px;
+  background: #3B3B3B;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.footer__select-item::before {
+  content: url(img/planet-footer.png);
+}
+.footer__select-item {
+  font-size: 13px;
+  color: #FFFFFF;
+}
+
+.social {
+  width: 92px;
+  height: 60px;
+  margin-bottom: 40px;
+}
+.social__top {
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.social__top__hash {
+  color: #49A144;
+}
+.social__link {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.stores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stores__link {
+  margin: 0 1rem;
+}
+
+.law {
+  padding-bottom: 40px;
+}
+.law__item {
+  margin: 12px 0;
+  font-size: 11px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+
+.btn-up {
+  position: absolute;
+  bottom: 16px;
+  right: 24px;
+  z-index: 99;
+}
+
+@media (max-width: 767px) {
+  .header__info-basket {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
