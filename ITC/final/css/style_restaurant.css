@@ -1,0 +1,160 @@
+.small-size {
+  display: none;
+}
+
+.restaurant {
+  flex-grow: 1;
+}
+.restaurant__header {
+  background-image: url(../img/pushkin/header/header-full.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+}
+.restaurant__header__box {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  padding: 36px;
+}
+.restaurant__header__box__heading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #1D1D1D;
+  margin-bottom: 60px;
+}
+.restaurant__header__box__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant__header__box__info__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #626262;
+}
+.restaurant__header__box__info__time {
+  padding: 8px 16px;
+  background: #262626;
+  border-radius: 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.restaurant__nav {
+  padding: 32px 0;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  margin-bottom: 56px;
+}
+.restaurant__nav__list:first-child {
+  color: #327430;
+}
+.restaurant__nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.restaurant__nav__list__item {
+  list-style-type: none;
+  margin-right: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+
+.snacks__snack:hover {
+  background-color: rgba(117, 117, 117, 0.04);
+}
+.snacks__snack {
+  box-sizing: border-box;
+  margin: 1.5em 0;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+}
+.snacks__snack__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.snacks__snack__info__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+}
+.snacks__snack__info__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+}
+.snacks__snack__info__price {
+  justify-self: end;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  color: #1D1D1D;
+}
+
+@media (max-width: 767px) {
+  .small-size {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 43px;
+  }
+  .restaurant__nav {
+    display: none;
+  }
+  .restaurant__header {
+    background-image: url(../img/pushkin/header/header-full.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 320px;
+  }
+  .restaurant__header__box {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    left: 0;
+  }
+  .restaurant__header__box__heading {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .restaurant__header__box__info {
+    flex-direction: column;
+  }
+  .restaurant__header__box__info__text {
+    margin: 16px;
+  }
+  .main__restaurants__header {
+    margin: 111px auto;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .snacks__snack__img {
+    width: 102px;
+    height: 102px;
+  }
+  .snacks__snack__info__name {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .snacks__snack__info__price {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .snacks__snack__info__description {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}/*# sourceMappingURL=style_restaurant.css.map */

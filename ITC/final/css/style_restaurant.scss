@@ -1,0 +1,168 @@
+$width-md: 767px;
+.small-size {
+    display: none;
+}
+.restaurant{
+    flex-grow: 1;
+    &__header {
+        background-image: url(../img/pushkin/header/header-full.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 80px;
+    &__box {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+        border-radius: 2px;
+        padding: 36px;
+        &__heading{
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 42px;
+            color: #1D1D1D;
+            margin-bottom: 60px;
+        }
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__text {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #626262;
+            }
+            &__time {
+                padding: 8px 16px;
+                background: #262626;
+                border-radius: 16px;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    }
+    &__nav{
+        padding: 32px 0;
+        border: 1px solid rgba(117, 117, 117, 0.2);
+        margin-bottom: 56px;
+        &__list:first-child {
+            color: #327430;
+        }
+        &__list {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            &__item {
+                list-style-type: none;
+                margin-right: 40px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #626262;
+            }
+        }
+    }
+}
+.snacks {
+    &__snack:hover {
+        background-color: rgba(117, 117, 117,0.04);
+    }
+    &__snack {
+        box-sizing: border-box;
+        margin: 1.5em 0;
+
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(117, 117, 117, 0.2);
+        border-radius: 2px;
+        &__info {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &__name{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #1D1D1D;
+            }
+            &__description {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 21px;
+                color: #626262;
+            }
+            &__price {
+                justify-self: end;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 21px;
+                color: #1D1D1D;
+            }
+        }
+    }
+}
+
+@media (max-width: $width-md) {
+    .small-size{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 43px;
+    }
+    .restaurant {
+        &__nav{display: none;}
+
+        &__header {
+        background-image: url(../img/pushkin/header/header-full.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 320px;
+        &__box {
+            position: absolute;
+            top: 130px;
+            width: 100%;
+            left: 0;
+            &__heading {
+                text-align: center;
+                font-size: 24px;
+                line-height: 28px;
+            }
+            &__info {
+                flex-direction: column;
+                &__text {
+                    margin: 16px;;
+                }
+            }
+        }
+        }
+    }
+    .main__restaurants__header {
+        margin: 111px auto;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+    .snacks__snack{
+        &__img {
+            width: 102px;
+            height: 102px;
+        }
+        &__info {
+            &__name {
+                font-size: 14px;
+                line-height: 24px;
+            }
+            &__price {
+                font-size: 15px;
+                line-height: 21px;
+            }
+            &__description {
+                font-size: 13px;
+                line-height: 21px;
+            }
+        }
+}
+
+}

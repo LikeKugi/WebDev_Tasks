@@ -105,7 +105,6 @@ body {
 .footer {
     background: #262626;
     padding-top: 56px;
-    position: relative;
 
     &__line {
         margin: 40px 0;
@@ -127,7 +126,6 @@ body {
             margin-top: 0;
         }
     }
-
     &__select {
         margin-bottom: 32px;
         max-width: 227px;
@@ -137,10 +135,6 @@ body {
         border-radius: 2px;
         font-size: 13px;
         color: #FFFFFF;
-        &-item::before{
-            content: url(img/planet-footer.png);
-
-        }
         &-item {
             font-size: 13px;
             color: #FFFFFF;
@@ -183,9 +177,14 @@ body {
 }
 .btn-up {
     position: absolute;
-    bottom: 16px;
-    right: 24px;
+    height: 100%;
+    right: 0;
     z-index: 99;
+    &__link {
+        position: fixed;
+        right: 24px;
+        bottom: 16px;
+    }
 }
 
 @media (max-width: 767px) {
