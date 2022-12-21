@@ -1,0 +1,18 @@
+$max-width: 1200px;
+
+
+body {
+  background-color: #ffe2b0;
+}
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+.header{
+  width: 100%;
+  text-align: center;
+  &__logo {
+    height: 75px;
+    margin: 0 auto;
+  }
+}

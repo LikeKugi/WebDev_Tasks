@@ -1,0 +1,19 @@
+body {
+  background-color: #ffe2b0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+.header__logo {
+  height: 75px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
