@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header {
@@ -50,19 +52,44 @@ body {
 .main {
   flex-grow: 1;
 }
-.main__image {
-  position: relative;
-}
 .main__image__img {
   width: 100%;
 }
 .main__image__box {
+  position: absolute;
+  bottom: 50px;
+  right: 10%;
+  box-sizing: border-box;
   width: 420px;
   height: 190px;
-  background-color: #ffe2b0;
+  background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
+  padding: 15px;
+}
+.main__image__box__content {
+  box-sizing: border-box;
   border: 1px solid #552b18;
+  width: 390px;
+  height: 160px;
+  color: #552b18;
+  text-align: center;
+  padding-top: 20px;
+}
+.main__image__box__content__header {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+.main__image__box__content__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
 
+@media (max-width: 768px) {
+  .main__image__box {
+    top: 0;
+    left: 0;
+  }
+}
 @media (max-width: 425px) {
   .nav__list {
     flex-direction: column;
