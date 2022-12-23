@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,12 +15,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: 20px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
 }
 
 .header {
@@ -28,11 +29,11 @@ body {
 }
 .header__logo {
   max-height: 80px;
-  margin: 20px auto;
+  margin: 0 auto 20px auto;
 }
 
 .nav {
-  padding: 20px;
+  margin-bottom: 20px;
 }
 .nav__list {
   display: flex;
@@ -48,16 +49,25 @@ body {
   text-transform: uppercase;
   color: #552b18;
 }
+.nav__list__item__link:hover {
+  color: brown;
+}
 
 .main {
   flex-grow: 1;
+}
+.main__image {
+  height: 640px;
+  background: url("../img/background-bread.jpeg") center/cover no-repeat;
+  position: relative;
+  margin-bottom: 20px;
 }
 .main__image__img {
   width: 100%;
 }
 .main__image__box {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   right: 10%;
   box-sizing: border-box;
   width: 420px;
@@ -75,19 +85,37 @@ body {
   padding-top: 20px;
 }
 .main__image__box__content__header {
-  font-family: "Roboto", sans-serif;
+  font-family: "Philosopher", sans-serif;
   font-size: 36px;
   margin-bottom: 5px;
 }
 .main__image__box__content__text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Light", sans-serif;
   font-size: 12px;
+}
+
+.signs__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.signs__content__sign {
+  max-width: 25%;
 }
 
 @media (max-width: 768px) {
   .main__image__box {
     top: 0;
     left: 0;
+  }
+  .signs__content {
+    flex-direction: column;
+  }
+  .signs__content__sign {
+    margin-bottom: 15px;
+  }
+  .signs__content__sign:last-child {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 425px) {
@@ -96,6 +124,9 @@ body {
   }
   .nav__list__item {
     margin-bottom: 10px;
+  }
+  .nav__list__item:last-child {
+    margin-bottom: 0;
   }
 }
 
