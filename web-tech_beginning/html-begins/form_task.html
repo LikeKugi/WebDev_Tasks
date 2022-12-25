@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Forms | Task</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="content">
+            <h1>Forms</h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <form action="#">
+                <fieldset disabled>
+                    <legend>Общая информация</legend>
+                    <label class="common" for="last-name">Фамилия</label>
+                    <input type="text" name="common" id="last-name" placeholder="Иванов">
+                    <br>
+                    <label class="common" for="name">Имя</label>
+                    <input type="text" name="common" id="name" placeholder="Иван">
+                    <br>
+                    <label class="common" for="mid-name">Отчество</label>
+                    <input type="text" name="common" id="mid-name" placeholder="Иванович">
+                    <br>
+                    <label class="common" for="email">email</label>
+                    <input type="email" name="common" id="email" placeholder="mail@mail.ru">
+                    <br>
+                </fieldset>
+
+                <fieldset disabled>
+                    <legend>Пол</legend>
+                    <input type="radio" name="sex" id="male" value="0">
+                    <label for="male">М</label>
+                    <input type="radio" name="sex" id="female" value="1">
+                    <label for="female">Ж</label>
+                </fieldset>
+
+                <fieldset disabled>
+                    <legend>Хобби</legend>
+                    <input type="checkbox" name="hobby" id="painting">
+                    <label for="painting">Рисование</label>
+                    <input type="checkbox" name="hobby" id="reading">
+                    <label for="reading">Чтение</label>
+                    <input type="checkbox" name="hobby" id="knitting">
+                    <label for="knitting">Вязание</label>
+                    <input type="checkbox" name="hobby" id="cooking">
+                    <label for="cooking">Кулинария</label>
+                </fieldset>
+
+                <button type="submit">Отправить</button>
+                <button type="reset">Очистить</button>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
