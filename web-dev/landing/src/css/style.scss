@@ -58,13 +58,15 @@ body {
     }
   }
 }
-
+.container-image {
+  height: 100%;
+  position: relative;
+}
 .main {
   flex-grow: 1;
   &__image {
     height: 640px;
     background: url("../img/background-bread.jpeg") center/cover no-repeat;
-    position: relative;
     margin-bottom: 20px;
     &__img {
       width: 100%;
@@ -101,12 +103,36 @@ body {
 }
 
 .signs {
+  margin-bottom: 20px;
   &__content {
     display: flex;
     justify-content: space-around;
     align-items: center;
     &__sign {
       max-width: 25%;
+    }
+  }
+}
+
+.description {
+  &__text {
+    text-align: center;
+    &__header {
+      font-family: 'Philosopher', sans-serif;
+      font-size: 96px;
+      font-weight: 400;
+      &__marked {
+        color: brown;
+      }
+    }
+    &__paragraph {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      padding: 0 1rem;
+      margin-bottom: 20px;
+    }
+    &__bottom-header {
+      margin-bottom: 20px;
     }
   }
 }
