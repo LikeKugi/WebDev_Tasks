@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$dark-color: #4E3835;
+$light-color: #E6D5B9;
+$light-back-color: #FFFDED;
+$white-footer: #FFFFFF;
+
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.content-box {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  background-color: $dark-color;
+  padding-top: 50px;
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: $light-color;
+    text-transform: uppercase;
+  }
+}
+.main {
+  flex-grow: 1;
+  min-height: 100%;
+  background-color: $light-back-color;
+  &__box{
+    min-height: 700px;
+    background-image: url("../img/coffee-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.footer {
+  background-color: $dark-color;
+  padding: 110px 0;
+  text-align: center;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: $light-color;
+  }
+  &__paragraph {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $white-footer;
+    &__email {
+      text-decoration: none;
+      color: $light-color;
+    }
+  }
+}
+.list-box {
+  padding-top: 100px;
+}
+.coffee-list {
+  list-style-type: " \2615";
+  &__item {
+    padding: 10px;
+  }
+}
