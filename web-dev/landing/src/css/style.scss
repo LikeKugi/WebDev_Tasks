@@ -131,12 +131,25 @@ body {
       padding: 0 1rem;
       margin-bottom: 20px;
     }
-    &__bottom-header {
-      font-family: 'Philosopher', sans-serif;
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
   }
+}
+.map {
+  margin-bottom: 20px;
+  &__title{
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  &__address {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.line{
+  border-top: 1px solid #999999;
+  width: 1024px;
+  margin: 0 auto 20px auto;
 }
 
 @media (max-width: $tablet-width) {

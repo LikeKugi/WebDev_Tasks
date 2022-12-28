@@ -127,10 +127,25 @@ body {
   padding: 0 1rem;
   margin-bottom: 20px;
 }
-.description__text__bottom-header {
+
+.map {
+  margin-bottom: 20px;
+}
+.map__title {
+  text-align: center;
   font-family: "Philosopher", sans-serif;
   font-size: 36px;
   margin-bottom: 20px;
+}
+.map__address {
+  display: block;
+  margin: 0 auto;
+}
+
+.line {
+  border-top: 1px solid #999999;
+  width: 1024px;
+  margin: 0 auto 20px auto;
 }
 
 @media (max-width: 768px) {
