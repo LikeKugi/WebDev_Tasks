@@ -148,6 +148,10 @@ body {
   margin: 0 auto 20px auto;
 }
 
+.footer {
+  min-height: 100px;
+}
+
 @media (max-width: 768px) {
   .main__image__box {
     top: 0;

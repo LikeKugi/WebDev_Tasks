@@ -151,6 +151,9 @@ body {
   width: 1024px;
   margin: 0 auto 20px auto;
 }
+.footer {
+  min-height: 100px;
+}
 
 @media (max-width: $tablet-width) {
   .main__image__box {
