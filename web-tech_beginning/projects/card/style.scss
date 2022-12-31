@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$back-color: #2797B2;
+
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: $back-color;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  min-height: 75px;
+  padding-top: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid $back-color;
+  border-radius: 40px 40px 0 0;
+  &__title {
+    color: $back-color;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+.card-box {
+  padding-top: 20px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  margin: 0 10px 10px 10px;
+  width: 200px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+
+  &__text {
+    padding: 16px;
+    &__title {
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 16px;
+      color: #000000;
+    }
+    &__description {
+      margin-bottom: 20px;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 14px;
+      color: #000000;
+    }
+    &__button {
+      display: inline-block;
+      background: #2797B2;
+      border-radius: 50px;
+      padding: 6px 24px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 14px;
+      color: #FFFFFF;
+    }
+  }
+}
+.footer {
+  min-height: 75px;
+  padding-bottom: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid $back-color;
+  border-radius: 0 0 40px 40px;
+}
