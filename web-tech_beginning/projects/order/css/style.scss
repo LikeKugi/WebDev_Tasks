@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+$main-back: #817070;
+$gray-color: #C4C4C4;
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 29px 0;
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+.main {
+  background-color: $main-back;
+  color: #FFFFFF;
+}
