@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/greeting.css">
+    <title>Greeting | Form & JS</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="header__title">Work with input and DOM</h1>
+    </div>
+</header>
+
+<section class="greeting-card">
+    <div class="container">
+        <div class="input-box">
+            <label class="greeting-card__label" for="userName">Имя:</label>
+            <input type="text" name="name" id="userName" autocomplete="off" required>
+        </div>
+
+        <div class="input-box">
+            <label class="greeting-card__label" for="userSurname">Фамилия:</label>
+            <input type="text" name="name" id="userSurname" autocomplete="off">
+        </div>
+
+        <div class="input-box">
+            <button class="input-submit" type="submit" id="submitButton">Отправить</button>
+        </div>
+    </div>
+</section>
+
+<section class="answer">
+    <div class="container">
+        <p class="answer__text">Ответ: </p>
+        <p class="answer__query" id="answer"></p>
+    </div>
+</section>
+
+<script src="js/greeting.js"></script>
+</body>
+
+</html>

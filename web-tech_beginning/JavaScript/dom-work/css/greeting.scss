@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  padding: 10px;
+  background-color: lightgrey;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.greeting-card {
+  padding: 20px;
+  &__label {
+    width: 100px;
+  }
+}
+.input {
+  &-box{
+  width: 50%;
+  display: flex;
+  margin-bottom: 20px;
+  }
+  &-submit {
+    text-transform: uppercase;
+    padding: 7px 15px;
+    border: 1px solid lightgrey;
+    &:hover {
+      background-color: #2f2f2f;
+      color: #FFFFFF;
+    }
+  }
+}
+.answer {
+  &__text {
+    padding-left: 15px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  &__query {
+    display: inline-block;
+  }
+}

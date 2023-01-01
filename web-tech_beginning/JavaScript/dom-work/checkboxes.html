@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkboxes.css">
+    <title>Checkboxes | work with DOM JS</title>
+</head>
+
+<body>
+<header class="header">
+    <div class="container"><h1 class="header__title">Work with checkboxes</h1></div>
+</header>
+<main class="main">
+    <div class="container">
+
+        <div class="query">
+            <h2 class="query__title">Выберите товары: </h2>
+            <div class="query__field">
+                <input type="checkbox" name="orderFood" id="applePie" value="120">
+                <label class="query__label" for="applePie">Пирог с яблоком - 120р.</label>
+            </div>
+            <div class="query__field">
+                <input type="checkbox" name="orderFood" id="chocolateCake" value="80">
+                <label class="query__label" for="chocolateCake">Шоколадный кекс - 80р.</label>
+            </div>
+            <div class="query__field">
+                <input type="checkbox" name="orderFood" id="cheeseCake" value="180">
+                <label class="query__label" for="cheeseCake">Чизкейк - 180р.</label>
+            </div>
+            <div class="query__field">
+                <button class="query__submit" type="submit" id="choose">Выбрать</button>
+            </div>
+            <p class="query__total">Общая стоимость: <span id="price">0</span> руб</p>
+        </div>
+
+    </div>
+    <script src="js/checkboxes.js"></script>
+</main>
+</body>
+
+</html>
