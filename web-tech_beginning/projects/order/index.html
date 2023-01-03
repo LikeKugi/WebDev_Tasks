@@ -37,34 +37,41 @@
 
                 <div class="input__container">
                     <label for="espresso">
-                        <input class="allow" type="checkbox" name="beverages-allow" id="espresso_allow">
+                        <input class="allow" type="checkbox" name="beverages-allow" id="espresso_allow"
+                               value="espresso">
                         <label class="text" for="espresso_allow">Эспресо 80р.</label>
                     </label>
-                    <input type="number" name="beverages" id="espresso" disabled placeholder="0">
+                    <input type="number" name="beverages" id="espresso" disabled placeholder="0" min="1" max="10"
+                           data-price="80">
                 </div>
 
                 <div class="input__container">
                     <label for="latte">
-                        <input class="allow" type="checkbox" name="beverages-allow" id="latte_allow">
+                        <input class="allow" type="checkbox" name="beverages-allow" id="latte_allow" value="latte">
                         <label class="text" for="latte_allow">Латте 110р.</label>
                     </label>
-                    <input type="number" name="beverages" id="latte" disabled placeholder="0">
+                    <input type="number" name="beverages" id="latte" disabled placeholder="0" min="1" max="10"
+                           data-price="110">
                 </div>
 
                 <div class="input__container">
                     <label for="cappuccino">
-                        <input class="allow" type="checkbox" name="beverages-allow" id="cappuccino_allow">
+                        <input class="allow" type="checkbox" name="beverages-allow" id="cappuccino_allow"
+                               value="cappuccino">
                         <label class="text" for="cappuccino_allow">Капучино 120р.</label>
                     </label>
-                    <input type="number" name="beverages" id="cappuccino" disabled placeholder="0">
+                    <input type="number" name="beverages" id="cappuccino" disabled placeholder="0" min="1" max="10"
+                           data-price="120">
                 </div>
 
                 <div class="input__container">
                     <label for="americano">
-                        <input class="allow" type="checkbox" name="beverages-allow" id="americano_allow">
+                        <input class="allow" type="checkbox" name="beverages-allow" id="americano_allow"
+                               value="americano">
                         <label class="text" for="americano_allow">Американо 90р.</label>
                     </label>
-                    <input type="number" name="beverages" id="americano" disabled placeholder="0">
+                    <input type="number" name="beverages" id="americano" disabled placeholder="0" min="1" max="10"
+                           data-price="90">
                 </div>
 
             </div>
@@ -73,26 +80,31 @@
 
                 <div class="input__container">
                     <label for="chocolate">
-                        <input class="allow" type="checkbox" name="beverages-allow" id="chocolate_allow">
+                        <input class="allow" type="checkbox" name="snacks-allow" id="chocolate_allow"
+                               value="chocolate">
                         <label class="text" for="chocolate_allow">Шоколадный кекс 80р.</label>
                     </label>
-                    <input type="number" name="beverages" id="chocolate" disabled placeholder="0">
+                    <input type="number" name="snacks" id="chocolate" disabled placeholder="0" min="1" max="10"
+                           data-price="80">
                 </div>
 
                 <div class="input__container">
                     <label for="blackberry">
-                        <input class="allow" type="checkbox" name="beverages-allow" id="blackberry_allow">
+                        <input class="allow" type="checkbox" name="snacks-allow" id="blackberry_allow"
+                               value="blackberry">
                         <label class="text" for="blackberry_allow">Черничный кекс 90р.</label>
                     </label>
-                    <input type="number" name="beverages" id="blackberry" disabled placeholder="0">
+                    <input type="number" name="snacks" id="blackberry" disabled placeholder="0" min="1" max="10"
+                           data-price="90">
                 </div>
 
                 <div class="input__container">
                     <label for="apple">
-                        <input class="allow" type="checkbox" name="beverages-allow" id="apple_allow">
+                        <input class="allow" type="checkbox" name="snacks-allow" id="apple_allow" value="apple">
                         <label class="text" for="apple_allow">Яблочный торт 100р.</label>
                     </label>
-                    <input class="text" type="number" name="beverages" id="apple" disabled placeholder="0">
+                    <input class="text" type="number" name="snacks" id="apple" disabled placeholder="0" min="1"
+                           max="10" data-price="100">
                 </div>
 
             </div>
@@ -105,6 +117,7 @@
         </div>
 
     </div>
+    <script src="js/counter.js"></script>
 </main>
 </body>
 
