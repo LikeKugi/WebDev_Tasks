@@ -23,11 +23,11 @@
 
             <label for="userLastname" style="display: none">Enter your last name</label>
             <input class="name__field text" type="text" name="name" id="userLastname" placeholder="Введите Фамилию"
-                   autocomplete="off">
+                   autocomplete="off" required>
 
             <label for="username" style="display: none">Enter your name</label>
             <input class="name__field text" type="text" name="name" id="username" placeholder="Введите Имя"
-                   autocomplete="off">
+                   autocomplete="off" required>
 
         </div>
 
@@ -113,7 +113,7 @@
 
         <div class="order input">
             <p class="order__price text">Итого: <span id="price">0</span> р.</p>
-            <button class="order__submit" type="submit" id="order-submit">Оформить заказ</button>
+            <button class="order__submit" type="submit" id="order-submit" disabled>Оформить заказ</button>
         </div>
 
     </div>

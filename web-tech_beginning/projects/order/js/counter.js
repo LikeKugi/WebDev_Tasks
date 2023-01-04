@@ -1,33 +1,80 @@
 const btnSubmit = document.getElementById('order-submit');
-const allowBeverage = document.querySelectorAll('[name="beverages-allow"]');
-const allowSnacks = document.querySelectorAll('[name="snacks-allow"]');
-const beverages = document.querySelectorAll('[name="beverages"]');
-const snacks = document.querySelectorAll('[name="snacks"]');
+const allowBeverages = document.getElementsByName("beverages-allow");
+const allowSnacks = document.getElementsByName("snacks-allow");
+const beverages = document.getElementsByName("beverages");
+const snacks = document.getElementsByName("snacks");
 const userName = document.getElementById('username');
 const userLastname = document.getElementById('userLastname');
 const total = document.getElementById('price');
 
-let supply = {
-    value: 0,
-    price: 0,
+let totalSupplies = new Map();
+
+const user = {
+    name : '',
+    surname : '',
+    price : 0,
 };
 
+function setOrder() {
+    btnSubmit.disabled = !user.name || !user.surname || user.price === 0;
+}
+function createSupplies(supply) {
+    totalSupplies.set(supply.id, (+supply.value * +supply.dataset.price))
+    let price = 0;
+    for (const supplyElement of totalSupplies.keys()) {
+        price += totalSupplies.get(supplyElement);
+    }
+    user.price = price;
+    total.innerHTML = `${price}`;
+    setOrder();
+}
  //по клику на кнопку
 allowSnacks.forEach(element => {
     element.addEventListener("change", function () {
+        let snack = document.getElementById(element.value);
         if (element.checked) {
-            alert(element.value);
-            let snack = document.getElementById(element.value);
             snack.disabled = false;
-            snack.value = 1
-            total.innerHTML = +total.innerHTML + +snack.value;
-            alert(snack.min);
+            snack.value = 1;
         } else {
-            total.innerHTML = +total.innerHTML - +snack.value;
+            snack.value = 0;
+            snack.disabled = true;
         }
+        createSupplies(snack);
     })
-});
+})
 
-function snacksPrice () {
+snacks.forEach(element => {
+    element.addEventListener("change", function () {
+        createSupplies(element);
+    })
+})
 
-}
+allowBeverages.forEach(element => {
+    element.addEventListener("change", function () {
+        let beverage = document.getElementById(element.value);
+        if (element.checked) {
+            beverage.disabled = false;
+            beverage.value = 1;
+        } else {
+            beverage.value = 0;
+            beverage.disabled = true;
+        }
+        createSupplies(beverage);
+    })
+})
+
+beverages.forEach(element => {
+    element.addEventListener("change", function () {
+        createSupplies(element);
+    })
+})
+
+userName.addEventListener("change", function () {
+    user.name = userName.value;
+})
+userLastname.addEventListener("change", function () {
+    user.surname = userLastname.value;
+})
+btnSubmit.addEventListener("click", function () {
+    alert(`Заказчик: ${user.surname} ${user.name}\nЦена: ${user.price}`);
+})
