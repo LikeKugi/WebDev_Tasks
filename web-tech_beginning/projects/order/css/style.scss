@@ -84,7 +84,9 @@ body {
 .beverages {
   margin-right: 120px;
 }
-
+input:focus {
+  outline: none;
+}
 input[type="number"] {
   @extend .bd;
   background-color: $main-back;

@@ -1,5 +1,124 @@
 @import "base";
+@import "colors";
+@import "txt";
+@import "mixins";
 
-h1 {
-    color: red;
+.header {
+    color: $white;
+
+    &__link {
+        display: block;
+        color: $white;
+
+        &:hover {
+            color: $txt-blue;
+        }
+    }
+
+    &__button {
+        background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+        border-radius: 4px;
+    }
+}
+
+.nav {
+    background-color: $header-background;
+
+    &__list {
+        margin: 0;
+        padding: 7px 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__item {
+        padding: 5px 35px;
+        border-right: 2px dotted #000;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    &__link {
+        @include txt-thin(15px, 15px);
+    }
+}
+
+.partners {
+    background-image: url("../img/uber_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    &__header {
+        padding: 15px 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__logo {
+        &-pic {
+            margin: 0;
+        }
+    }
+
+    &__caption {
+        @include txt-hair(13px, 15px);
+    }
+
+    &__call {
+        display: flex;
+        align-items: flex-end;
+
+        &-link {
+            margin-right: 20px;
+        }
+
+        &-text {
+            margin: 5px 0;
+            @include txt-thin(12px, 14px);
+        }
+
+        &-number {
+            @include txt-norm(22px, 25px);
+        }
+
+        &-button {
+            padding: 0 20px;
+            @include button-shd(-3px);
+            color: $white;
+            @include txt-norm(14px, 46px);
+        }
+
+    }
+
+    &__title {
+        @include txt-title(36px, 48px);
+    }
+
+
+
+    &__text {
+        &:last-of-type {
+            margin-bottom: 110px;
+        }
+
+        &-box {
+            padding-top: 60px;
+        }
+
+        @include txt-norm(18px, 24px);
+        text-align: center;
+
+        &-button {
+            margin: 0 auto 180px;
+            padding: 10px 40px;
+            @include button-shd(-4px);
+            color: $white;
+            @include txt-norm(18px, 50px);
+        }
+    }
+
+
 }

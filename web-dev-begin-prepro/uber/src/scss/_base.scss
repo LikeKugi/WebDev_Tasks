@@ -1,12 +1,48 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
 .content-box {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+
 .content {
     flex-grow: 1;
 }
-.container {
-    margin: 0 auto;
-    max-width: 1140px;
+
+.box {
+    min-height: 100vh;
+}
+
+.link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.button {
+    border: 1px solid transparent;
+    display: block;
+    text-transform: uppercase;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+    }
 }

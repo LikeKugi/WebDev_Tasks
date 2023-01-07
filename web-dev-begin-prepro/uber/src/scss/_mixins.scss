@@ -1,0 +1,3 @@
+@mixin button-shd($px) {
+    box-shadow: inset 0px $px 0px rgba(0, 0, 0, 0.12);
+}

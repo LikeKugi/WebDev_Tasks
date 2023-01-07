@@ -71,9 +71,11 @@ beverages.forEach(element => {
 
 userName.addEventListener("change", function () {
     user.name = userName.value;
+    setOrder()
 })
 userLastname.addEventListener("change", function () {
     user.surname = userLastname.value;
+    setOrder()
 })
 btnSubmit.addEventListener("click", function () {
     alert(`Заказчик: ${user.surname} ${user.name}\nЦена: ${user.price}`);
