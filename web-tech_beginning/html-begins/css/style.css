@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+h1 {
+  text-transform: capitalize;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style-coffee.css.map */

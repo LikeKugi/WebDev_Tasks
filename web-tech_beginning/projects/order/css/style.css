@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+.bd, .order__submit:hover, input[type=checkbox], input[type=number], .name__field {
+  border: 3px solid #FFFFFF;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+.header {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 29px 0;
+}
+.header__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main {
+  background-color: #817070;
+  color: #FFFFFF;
+  padding: 85px 0 35px 0;
+}
+
+.name {
+  margin-bottom: 80px;
+  justify-content: center;
+}
+.name__field {
+  margin-right: 65px;
+  width: 300px;
+  height: 55px;
+  background-color: #817070;
+  color: #FFFFFF;
+  text-align: center;
+}
+.name__field:last-child {
+  margin-right: 0;
+}
+.name__field::placeholder {
+  color: #FFFFFF;
+}
+
+.allow {
+  border: 3px solid #FFFFFF;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+}
+.input__container {
+  width: 350px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+}
+
+.beverages {
+  margin-right: 120px;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type=number] {
+  background-color: #817070;
+  text-align: center;
+  width: 130px;
+  height: 55px;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+input[type=number]:disabled {
+  background-color: #C4C4C4;
+}
+input[type=number]::placeholder {
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=checkbox] {
+  width: 21px;
+  height: 21px;
+  background-color: #C4C4C4;
+}
+input[type=checkbox]:checked {
+  background-color: #817070;
+}
+
+.description {
+  width: 170px;
+}
+
+.goods {
+  margin-bottom: 40px;
+}
+
+.order {
+  margin-bottom: 35px;
+  flex-direction: column;
+  align-items: center;
+}
+.order__price {
+  margin-bottom: 26px;
+}
+.order__submit {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  border: 3px solid transparent;
+  background-color: #FFFFFF;
+  color: #817070;
+  padding: 13px 20px;
+}
+.order__submit:hover {
+  background-color: #817070;
+  color: #FFFFFF;
+}
+.order__submit:disabled {
+  background-color: #C4C4C4;
+}
+
+/*# sourceMappingURL=style.css.map */

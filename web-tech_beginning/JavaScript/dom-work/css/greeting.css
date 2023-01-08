@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 10px;
+  background-color: lightgrey;
+}
+.header__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.greeting-card {
+  padding: 20px;
+}
+.greeting-card__label {
+  width: 100px;
+}
+
+.input-box {
+  width: 50%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.input-submit {
+  text-transform: uppercase;
+  padding: 7px 15px;
+  border: 1px solid lightgrey;
+}
+.input-submit:hover {
+  background-color: #2f2f2f;
+  color: #FFFFFF;
+}
+
+.answer__text {
+  padding-left: 15px;
+  display: inline-block;
+  margin-right: 15px;
+}
+.answer__query {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=greeting.css.map */

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.content-box {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #4E3835;
+  padding-top: 50px;
+}
+.header__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #E6D5B9;
+  text-transform: uppercase;
+}
+
+.main {
+  flex-grow: 1;
+  min-height: 100%;
+  background-color: #FFFDED;
+}
+.main__box {
+  min-height: 700px;
+  background-image: url("../img/coffee-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer {
+  background-color: #4E3835;
+  padding: 110px 0;
+  text-align: center;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #E6D5B9;
+}
+.footer__paragraph {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.footer__paragraph__email {
+  text-decoration: none;
+  color: #E6D5B9;
+}
+
+.list-box {
+  padding-top: 100px;
+}
+
+.coffee-list {
+  list-style-type: " ☕";
+}
+.coffee-list__item {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style_coffee-two.css.map */
