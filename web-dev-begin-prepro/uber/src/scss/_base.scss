@@ -46,3 +46,15 @@ html {
         outline: none;
     }
 }
+
+.details {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    &:hover {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
