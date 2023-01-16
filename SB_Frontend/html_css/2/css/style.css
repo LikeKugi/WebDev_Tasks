@@ -1,0 +1,36 @@
+body {
+  background-color: ivory;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+table caption {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+table thead {
+  text-align: center;
+}
+table th,
+table td {
+  border: 1px solid #000;
+  padding: 15px;
+}
+
+.program {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.program__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.program__list {
+  padding-right: 2rem;
+}
+.program__item {
+  margin-bottom: 0.4rem;
+}/*# sourceMappingURL=style.css.map */
