@@ -5,8 +5,22 @@ html {
   line-height: 24px;
 }
 
+.title {
+  padding-left: 45px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 40px;
+}
+.title::first-letter {
+  text-transform: uppercase;
+}
+.title_norm {
+  color: #333333;
+}
+
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 .rounded {
@@ -20,6 +34,13 @@ html {
   background-color: #E5E5E5;
 }
 
+.section-container:not(:last-child) {
+  margin-bottom: 70px;
+}
+.section-container:last-child {
+  margin-bottom: 40px;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -28,31 +49,69 @@ html {
 
 .link {
   text-decoration: none;
+  transition: all 0.3s;
 }
-.link-gray {
+.link_gray {
   color: #666666;
 }
-.link-gray:hover, .link-gray:focus {
+.link_gray:hover, .link_gray:focus {
   color: #CC9933;
 }
-.link-gray:focus {
+.link_gray:focus {
   border: 1px solid #CC9933;
 }
-.link-gray:active {
+.link_gray:active {
   color: #A47312;
 }
-.link-orange {
-  color: #CC9933;
-}
-.link-orange:hover {
+.link_light {
   color: #F0BF5F;
 }
-.link-orange:focus {
+.link_light:hover {
+  color: #CC9933;
+}
+.link_light:focus {
   color: #CC9933;
   border: 1px solid #CC9933;
 }
-.link-orange:active {
+.link_light:active {
   color: #A47312;
+}
+.link_light svg {
+  stroke: #F0BF5F;
+}
+.link_light svg:hover {
+  stroke: #CC9933;
+}
+.link_light svg:focus {
+  stroke: #CC9933;
+}
+.link_light svg:active {
+  stroke: #A47312;
+}
+.link_orange {
+  color: #CC9933;
+}
+.link_orange:hover {
+  color: #F0BF5F;
+}
+.link_orange:focus {
+  color: #CC9933;
+  border: 1px solid #CC9933;
+}
+.link_orange:active {
+  color: #A47312;
+}
+.link_orange svg {
+  stroke: #CC9933;
+}
+.link_orange svg:hover {
+  stroke: #F0BF5F;
+}
+.link_orange svg:focus {
+  stroke: #CC9933;
+}
+.link_orange svg:active {
+  stroke: #A47312;
 }
 
 .btn {
@@ -60,6 +119,7 @@ html {
   border-radius: 10px;
   color: #CC9933;
   background-color: #FFFFFF;
+  transition: all 0.3s;
 }
 .btn:hover, .btn:focus {
   color: #FFFFFF;
@@ -83,6 +143,13 @@ html {
   padding: 27px 30px;
 }
 
+.card {
+  min-width: 570px;
+  width: 570px;
+  min-height: 258px;
+  height: 258px;
+}
+
 .header-box {
   display: flex;
   justify-content: space-between;
@@ -95,4 +162,116 @@ html {
 }
 .header__logo-link {
   margin-right: 40px;
+}
+
+.nav-box {
+  height: 70px;
+  padding: 0 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 45px;
+}
+.nav__btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.specials-box {
+  display: flex;
+  justify-content: space-between;
+}
+.specials__left {
+  margin-right: 24px;
+}
+.specials__right {
+  display: flex;
+  min-width: 570px;
+  width: 570px;
+  height: 540px;
+  min-height: 540px;
+  background: url(../img/lux-appartments.jpg);
+}
+.specials__right .specials__link {
+  justify-content: end;
+}
+.specials__right .specials__link .specials__title {
+  margin-bottom: 12px;
+}
+.specials__right .specials__link .specials__price {
+  margin-bottom: 47px;
+}
+.specials__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+  padding: 40px 45px;
+  width: 100%;
+  height: 100%;
+}
+.specials__link:focus {
+  border: none;
+}
+.specials__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+.specials__price {
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+.specials__card-1 {
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/maldives.png);
+}
+.specials__card-2 {
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/crete.png);
+}
+
+.about__text {
+  max-width: 75%;
+  line-height: 200%;
+}
+
+.service-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.service__item {
+  height: 330px;
+  background-color: #FFFFFF;
+}
+.service__title {
+  font-size: 20px;
+  line-height: 200%;
+}
+.service__text {
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.card__box-picture {
+  height: 50%;
+}
+.card__box-picture img {
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.card__box-text {
+  padding: 26px 45px 35px;
 }/*# sourceMappingURL=style.css.map */
