@@ -1,0 +1,66 @@
+.mobile {
+    padding: 46px 0 70px;
+    background-image: url('../img/mobile_bg.png');
+    background-size: cover;
+    text-align: center;
+
+    &__details {
+        margin-bottom: 32px;
+    }
+
+    &__title-section {
+        margin-bottom: 0;
+    }
+
+    &mobile__subtitle {
+        margin-bottom: 30px;
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        height: 280px;
+        color: $white;
+
+        &_1 {
+            background: url(../img/card-1.png);
+        }
+
+        &_2 {
+            background: url(../img/card-2.png);
+        }
+
+        &_3 {
+            background: url(../img/card-3.png);
+        }
+
+        &_4 {
+            background: url(../img/card-4.png);
+        }
+
+        &_5 {
+            background: url(../img/card-5.png);
+        }
+
+        &_6 {
+            background: url(../img/card-6.png);
+        }
+
+        &__title-box {
+            margin: auto;
+        }
+
+        &__plus {
+            margin: 0 auto 35px;
+            width: 29px;
+            height: 29px;
+            border-radius: 50%;
+
+            background-color: #000;
+
+            cursor: pointer;
+        }
+    }
+
+}

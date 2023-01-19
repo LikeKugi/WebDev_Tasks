@@ -3,6 +3,8 @@
 @import "txt";
 @import "mixins";
 
+@import "mobile";
+
 .header {
   color: $white;
 
@@ -18,7 +20,9 @@
   &__button {
     background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
     border-radius: 4px;
-    &:hover, &:active {
+
+    &:hover,
+    &:active {
       color: $txt-dark;
     }
   }
@@ -122,20 +126,25 @@
   }
 }
 
-.details{
+.details {
   &_dark {
     background-color: #000;
     color: $white;
-    &:hover, &:active {
+
+    &:hover,
+    &:active {
       color: #000;
       background-color: $white;
       border: 1px solid #000;
     }
   }
+
   &_light {
     color: #000;
     background-color: $white;
-    &:hover, &:active {
+
+    &:hover,
+    &:active {
       background-color: #000;
       color: $white;
       border: 1px solid $white;
@@ -146,14 +155,17 @@
 .reasons {
   text-align: center;
   padding: 18px 0 65px;
+
   &__details {
     margin-bottom: 30px;
   }
+
   &__item {
     display: flex;
     padding-left: 30px;
     margin-bottom: 25px;
   }
+
   &__box {
     &-img {
       min-width: 115px;
@@ -167,17 +179,21 @@
       justify-content: center;
       align-items: center;
     }
+
     &-text {
       text-align: left;
     }
   }
+
   &__title {
     @include txt-norm(17px, 21px);
     color: $txt-blue;
+
     &-section {
       margin-bottom: 16px;
     }
   }
+
   &__text {
     @include txt-thin(15px, 21px);
     color: $txt-reasons-dark;

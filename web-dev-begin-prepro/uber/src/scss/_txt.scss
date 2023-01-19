@@ -43,4 +43,25 @@ body {
     &_section {
         @include txt-title(38px, 48px);
     }
+
+    &_card {
+        @include txt-norm(24px, 31px);
+    }
+}
+
+.subtitle {
+    text-align: center;
+    @include txt-norm(17px, 21px);
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+
+    &_dark {
+        color: $txt-dark;
+    }
+
+    &_light {
+        color: $white;
+    }
 }

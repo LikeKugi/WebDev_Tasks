@@ -76,6 +76,79 @@ body {
   font-size: 38px;
   line-height: 48px;
 }
+.title_card {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+}
+.subtitle::first-letter {
+  text-transform: uppercase;
+}
+.subtitle_dark {
+  color: #222222;
+}
+.subtitle_light {
+  color: #FFFFFF;
+}
+
+.mobile {
+  padding: 46px 0 70px;
+  background-image: url("../img/mobile_bg.png");
+  background-size: cover;
+  text-align: center;
+}
+.mobile__details {
+  margin-bottom: 32px;
+}
+.mobile__title-section {
+  margin-bottom: 0;
+}
+.mobilemobile__subtitle {
+  margin-bottom: 30px;
+}
+.mobile-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  height: 280px;
+  color: #FFFFFF;
+}
+.mobile-card_1 {
+  background: url(../img/card-1.png);
+}
+.mobile-card_2 {
+  background: url(../img/card-2.png);
+}
+.mobile-card_3 {
+  background: url(../img/card-3.png);
+}
+.mobile-card_4 {
+  background: url(../img/card-4.png);
+}
+.mobile-card_5 {
+  background: url(../img/card-5.png);
+}
+.mobile-card_6 {
+  background: url(../img/card-6.png);
+}
+.mobile-card__title-box {
+  margin: auto;
+}
+.mobile-card__plus {
+  margin: 0 auto 35px;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background-color: #000;
+  cursor: pointer;
+}
 
 .header {
   color: #FFFFFF;
@@ -249,6 +322,4 @@ body {
   font-size: 15px;
   line-height: 21px;
   color: #202020;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
