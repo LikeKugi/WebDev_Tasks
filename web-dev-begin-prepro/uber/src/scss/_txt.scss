@@ -47,6 +47,12 @@ body {
     &_card {
         @include txt-norm(24px, 31px);
     }
+    &_dark {
+        color: $txt-dark;
+    }
+    &_light {
+        color: $white;
+    }
 }
 
 .subtitle {

@@ -4,6 +4,7 @@
 @import "mixins";
 
 @import "mobile";
+@import "choose";
 
 .header {
   color: $white;
@@ -199,3 +200,4 @@
     color: $txt-reasons-dark;
   }
 }
+
