@@ -71,3 +71,19 @@ body {
         color: $white;
     }
 }
+
+.blue {
+    color: $txt-blue_conditions;
+
+    &-list {
+        list-style-image: url("../icons/check_blue 1.svg");
+    }
+}
+
+.red {
+    color: $red;
+
+    &-list {
+        list-style-image: url("../icons/check_red 1.svg");
+    }
+}

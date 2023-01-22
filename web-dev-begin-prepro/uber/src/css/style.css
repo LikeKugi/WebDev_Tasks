@@ -105,6 +105,20 @@ body {
   color: #FFFFFF;
 }
 
+.blue {
+  color: #1CA8C3;
+}
+.blue-list {
+  list-style-image: url("../icons/check_blue 1.svg");
+}
+
+.red {
+  color: #FF5656;
+}
+.red-list {
+  list-style-image: url("../icons/check_red 1.svg");
+}
+
 .mobile {
   padding: 46px 0 70px;
   background-image: url("../img/mobile_bg.png");
@@ -184,6 +198,51 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #222222;
+}
+
+.conditions {
+  padding: 65px 85px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.conditions__details {
+  margin-bottom: 27px;
+}
+.conditions__title-section {
+  margin-bottom: 30px;
+}
+.conditions .card {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.conditions .card__title {
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+}
+.conditions .card__list {
+  margin-bottom: 25px;
+}
+.conditions .card__item {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+}
+.conditions .card__item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.conditions .card__text {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.f-word {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
 }
 
 .header {

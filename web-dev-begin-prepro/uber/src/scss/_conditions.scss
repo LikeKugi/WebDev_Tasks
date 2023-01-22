@@ -1,0 +1,37 @@
+.conditions {
+  padding: 65px 85px;
+  text-align: center;
+  background-color: $white;
+  &__details {
+    margin-bottom: 27px;
+  }
+  &__title-section {
+    margin-bottom: 30px;
+  }
+  .card {
+    margin-bottom: 60px;
+    text-align: left;
+    &__title {
+      margin-bottom: 20px;
+      @include txt-thin(17px, 24px);
+    }
+    &__list {
+      margin-bottom: 25px;
+    }
+    &__item {
+      @include txt-thin(17px, 24px);
+      &:not(:last-of-type) {
+        margin-bottom: 10px;
+      }
+    }
+    &__text {
+      @include txt-thin(17px, 24px);
+    }
+  }
+}
+
+.f-word {
+  text-transform: uppercase;
+  @include txt-norm(22px, 24px);
+
+}
