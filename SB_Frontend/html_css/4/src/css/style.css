@@ -274,4 +274,26 @@ html {
 }
 .card__box-text {
   padding: 26px 45px 35px;
+}
+
+.benefits-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+.benefits__item {
+  background-color: #FFFFFF;
+  max-width: calc(25% - 20px);
+  min-width: 20%;
+  padding: 45px 42px 32px 45px;
+}
+.benefits__box-text {
+  margin-bottom: 10px;
+}
+.benefits__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */
