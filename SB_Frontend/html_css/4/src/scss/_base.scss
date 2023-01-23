@@ -118,6 +118,23 @@
             }
         }
     }
+
+    &_white {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $link-hover;
+        }
+
+        &:focus {
+            border: 1px solid $link-hover;
+        }
+
+        &:active {
+            color: $link-active;
+        }
+    }
 }
 
 .btn {

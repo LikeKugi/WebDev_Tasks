@@ -113,6 +113,18 @@ html {
 .link_orange svg:active {
   stroke: #A47312;
 }
+.link_white {
+  color: #FFFFFF;
+}
+.link_white:hover, .link_white:focus {
+  color: #CC9933;
+}
+.link_white:focus {
+  border: 1px solid #CC9933;
+}
+.link_white:active {
+  color: #A47312;
+}
 
 .btn {
   border: 1px solid #CC9933;
@@ -296,4 +308,84 @@ html {
   font-size: 16px;
   line-height: 200%;
   color: #000000;
+}
+
+.placing-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.placing__box {
+  width: 100%;
+  max-width: 375px;
+  background-color: #FFFFFF;
+}
+.placing__box-text {
+  padding: 36px 45px 45px;
+}
+.placing__box .description > *:not(:last-child) {
+  margin-bottom: 16px;
+}
+.placing__box .description__price-box {
+  display: flex;
+  justify-content: space-between;
+}
+.placing__box .description__price-box .price__from {
+  font-size: 16px;
+  color: #999999;
+}
+.placing__box .description__price-box .price__value {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+.placing__box .description__price-box .price__night {
+  font-size: 16px;
+}
+.placing__box .description__title {
+  font-size: 16px;
+}
+.placing__box .description__text {
+  font-size: 16px;
+  color: #999999;
+}
+.placing .variants__link {
+  display: block;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.placing .variants__link:focus .variants__text {
+  outline: #CC9933 solid;
+}
+.placing .variants__box-text {
+  position: absolute;
+  padding-bottom: 20px;
+}
+.placing .variants__box-text svg {
+  stroke: #FFFFFF;
+}
+.placing .variants__text {
+  display: inline-block;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 200%;
+}
+
+.star {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+}
+.star:not(:last-of-type) {
+  margin-right: 6px;
+}
+.star_gold {
+  background-image: url("../icons/star-gold.svg");
+}
+.star_gray {
+  background-image: url("../icons/star-gray.svg");
 }/*# sourceMappingURL=style.css.map */
