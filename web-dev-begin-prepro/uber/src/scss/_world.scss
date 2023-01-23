@@ -1,0 +1,45 @@
+.world {
+  min-height: 720px;
+  position: relative;
+  background-color: $world-bg;
+  background-image: url("../img/world_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  &__box {
+    min-height: 100%;
+    &-image {
+      width: 100%;
+    }
+    &-header {
+      padding-top: 45px;
+      text-align: center;
+    }
+    &-link {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $footer-blue;
+    &:hover {
+      text-decoration: none;
+      color: $white;
+      outline: $footer-blue solid;
+    }
+    &:active {
+      color: $white;
+      background-color: $footer-blue;
+    }
+  }
+  &__details {
+    margin-bottom: 26px;
+  }
+}
