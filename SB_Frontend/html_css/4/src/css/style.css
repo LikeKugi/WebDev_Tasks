@@ -401,4 +401,45 @@ html {
 }
 .star_gray {
   background-image: url("../icons/star-gray.svg");
+}
+
+.offer-box {
+  padding: 45px 0;
+  background-color: #E9E9E9;
+}
+.offer__box {
+  margin: 0 45px;
+}
+.offer__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 32px;
+  background-color: #FFFFFF;
+}
+.offer__item {
+  padding: 5px;
+}
+.offer__item:hover {
+  outline: 1px solid #E9E9E9;
+}
+.offer__label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+}
+.offer select,
+.offer input {
+  border: 0;
+  font-size: 16px;
+}
+.offer select:focus,
+.offer input:focus {
+  outline: 1px solid #A47312;
+}
+.offer input[type=number] {
+  border-bottom: 1px solid #E9E9E9;
 }/*# sourceMappingURL=style.css.map */
