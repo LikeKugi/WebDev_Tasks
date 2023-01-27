@@ -48,6 +48,11 @@
     text-decoration: none;
     transition: all .3s;
 
+    & svg path {
+        stroke: currentColor;
+    }
+
+
     &_gray {
         color: $gray-normal;
 
@@ -80,22 +85,6 @@
         &:active {
             color: $link-active;
         }
-
-        & svg {
-            stroke: $link-default;
-
-            &:hover {
-                stroke: $link-hover;
-            }
-
-            &:focus {
-                stroke: $link-hover;
-            }
-
-            &:active {
-                stroke: $link-active;
-            }
-        }
     }
 
     &_orange {
@@ -112,22 +101,6 @@
 
         &:active {
             color: $link-active;
-        }
-
-        & svg {
-            stroke: $link-hover;
-
-            &:hover {
-                stroke: $link-default;
-            }
-
-            &:focus {
-                stroke: $link-hover;
-            }
-
-            &:active {
-                stroke: $link-active;
-            }
         }
     }
 

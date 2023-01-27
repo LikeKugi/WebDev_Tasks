@@ -63,6 +63,9 @@ html {
   text-decoration: none;
   transition: all 0.3s;
 }
+.link svg path {
+  stroke: currentColor;
+}
 .link_gray {
   color: #666666;
 }
@@ -88,18 +91,6 @@ html {
 .link_light:active {
   color: #A47312;
 }
-.link_light svg {
-  stroke: #F0BF5F;
-}
-.link_light svg:hover {
-  stroke: #CC9933;
-}
-.link_light svg:focus {
-  stroke: #CC9933;
-}
-.link_light svg:active {
-  stroke: #A47312;
-}
 .link_orange {
   color: #CC9933;
 }
@@ -112,18 +103,6 @@ html {
 }
 .link_orange:active {
   color: #A47312;
-}
-.link_orange svg {
-  stroke: #CC9933;
-}
-.link_orange svg:hover {
-  stroke: #F0BF5F;
-}
-.link_orange svg:focus {
-  stroke: #CC9933;
-}
-.link_orange svg:active {
-  stroke: #A47312;
 }
 .link_white {
   color: #FFFFFF;
@@ -442,4 +421,54 @@ html {
 }
 .offer input[type=number] {
   border-bottom: 1px solid #E9E9E9;
+}
+
+.contacts__box {
+  display: flex;
+  padding: 45px;
+  background-color: #FFFFFF;
+}
+.contacts__box-text {
+  margin-right: 52px;
+}
+.contacts__box-img {
+  border-radius: 10px;
+}
+.contacts__address-section {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #E9E9E9;
+}
+.contacts__address-section:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+.contacts__address-section:last-of-type {
+  margin-bottom: 45px;
+}
+.contacts__btn {
+  font-size: 16px;
+}
+
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  min-width: 375px;
+}
+.address__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+.address__text {
+  font-size: 16px;
+}
+.address__text_light {
+  color: #999999;
+}
+.address__box-title {
+  min-width: 40%;
+}
+.address * {
+  line-height: 150%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,13 @@
                     </div>
                     <div class="header__personal">
                         <a href="#" class="header__personal-link link link_orange">
-                            <img src="icons/cab/login.svg" alt="Личный кабинет">
+                            <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.59 1.41L14.17 5H0V7H14.17L10.58 10.59L12 12L18 6L12 0L10.59 1.41ZM19 0V12H21V0H19Z"
+                                    fill="#CC9933" />
+                            </svg>
+
                             Личный кабинет
                         </a>
                     </div>
@@ -555,6 +561,7 @@
                 </div>
             </div>
         </section>
+
         <section class="offer section-container">
             <div class="container">
 
@@ -577,10 +584,10 @@
                             </div>
 
                             <div class="offer__item">
-                                <label for="offer-city" class="offer__label">
+                                <label for="offer-country" class="offer__label">
                                     Страна
                                 </label>
-                                <select name="city" id="offer-country">
+                                <select name="country" id="offer-country">
                                     <option value="1" selected>Австралия</option>
                                     <option value="2">Москва</option>
                                     <option value="3">Австрия</option>
@@ -590,24 +597,24 @@
                             </div>
 
                             <div class="offer__item">
-                                <label for="offer-city" class="offer__label">
+                                <label for="offer-date" class="offer__label">
                                     Дата прибытия
                                 </label>
                                 <input type="date" name="date" id="offer-date">
                             </div>
 
                             <div class="offer__item">
-                                <label for="offer-city" class="offer__label">
+                                <label for="offer-nights" class="offer__label">
                                     Ночей
                                 </label>
-                                <input type="number" name="date" id="offer-date" min="1" placeholder="1">
+                                <input type="number" name="nights" id="offer-nights" min="1" placeholder="1">
                             </div>
 
                             <div class="offer__item">
-                                <label for="offer-city" class="offer__label">
+                                <label for="offer-beds" class="offer__label">
                                     Туристы
                                 </label>
-                                <input type="number" name="date" id="offer-date" min="1" placeholder="1">
+                                <input type="number" name="beds" id="offer-beds" min="1" placeholder="1">
                             </div>
 
                             <button type="submit" class="btn btn_medium">Найти</button>
@@ -616,8 +623,66 @@
                 </div>
             </div>
         </section>
+
         <section class="contacts section-container">
-            <div class="container"></div>
+            <div class="container">
+                <h2 class="title title_norm">Преимущества</h2>
+                <div class="contacts__box rounded">
+                    <div class="contacts__box-text">
+                        <div class="contacts__address-section address">
+                            <div class="address__box-title">
+                                <h3 class="address__title">Адрес</h3>
+                            </div>
+                            <div class="address__box-links">
+                                <p class="address__text">
+                                    Москва, улица Юности, дом 5 строение 4, офис 2
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__address-section address">
+                            <div class="address__box-title">
+                                <h3 class="address__title">Телефоны</h3>
+                            </div>
+                            <div class="address__box-links">
+                                <a href="tel:+7499535-64-34" class="link link_orange">+7 499 535-64-34</a>
+                                <a href="tel:+7495005-05-44" class="link link_orange">+7 495 005-05-44</a>
+                            </div>
+                        </div>
+
+                        <div class="contacts__address-section address">
+                            <div class="address__box-title">
+                                <h3 class="address__title">Email</h3>
+                            </div>
+                            <div class="address__box-links">
+                                <a href="email:lg.oona@mail.ru" class="link link_orange">lg.oona@mail.ru</a>
+                                <p class="address__text address__text_light">
+                                    по вопросам бронирования
+                                </p>
+                                <a href="email:hotels.ln@mail.ru" class="link link_orange">hotels.ln@mail.ru</a>
+                                <p class="address__text address__text_light">
+                                    по вопросам сотрудничества
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contacts__address-section address">
+                            <div class="address__box-title">
+                                <h3 class="address__title">График</h3>
+                            </div>
+                            <div class="address__box-links">
+                                <p class="address__text">
+                                    Понедельник-пятница, с 10:00 до 19:00
+                                </p>
+                            </div>
+                        </div>
+                        <button class="btn contacts__btn btn_lg">Построить маршрут</button>
+                    </div>
+                    <div class="contacts__box-img">
+                        <img src="img/contacts-lagoona.png" alt="contacts">
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <footer class="footer">
