@@ -43,7 +43,11 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-bottom: 30px;
   background-color: #E5E5E5;
+}
+.lgn-page__content {
+  flex-grow: 1;
 }
 
 .section-container:not(:last-child) {
@@ -471,4 +475,47 @@ html {
 }
 .address * {
   line-height: 150%;
+}
+
+.footer-box {
+  display: flex;
+  padding: 45px;
+  background-color: #333333;
+  background-image: url(../icons/lagoona-logo.png);
+  background-repeat: no-repeat;
+  background-position: 90% 100%;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 190%;
+}
+.footer__info {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 125px;
+}
+.footer__info-box {
+  margin-bottom: 40px;
+}
+.footer__address {
+  width: 100%;
+  max-width: 375px;
+}
+.footer__address-box {
+  margin-bottom: 15px;
+}
+.footer__socials {
+  margin: 0 0 0 auto;
+}
+.footer__socials-box:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.footer__link {
+  display: block;
+  width: fit-content;
+  height: max-content;
+  line-height: 1;
+  border: 1px solid transparent;
+}
+.footer__link svg path {
+  fill: currentColor;
 }/*# sourceMappingURL=style.css.map */
