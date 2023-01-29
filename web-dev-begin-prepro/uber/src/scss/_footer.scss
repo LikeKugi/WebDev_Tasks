@@ -1,7 +1,87 @@
 .footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 15px 25px 45px;
   background-color: $white;
+
+  &__nav-box {
+    width: 60%;
+  }
+
+  &__socials,
+  &__stores {
+    width: 20%;
+  }
+
+  &__divider {
+    min-width: 300px;
+    border-bottom: 8px solid $footer-blue;
+  }
+
+  &__lang {
+    display: block;
+    width: max-content;
+    margin: auto;
+    color: $footer-blue;
+  }
+
+  &__stores {
+    text-align: right;
+  }
+}
+
+.socials {
+  &__link {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding-top: 4px;
+    text-align: center;
+    background-color: $btn-dark;
+    border-radius: 50%;
+    color: $white;
+    transition: color .1s;
+
+    &:hover {
+      color: $txt-blue;
+    }
+
+    & svg path {
+      fill: currentColor;
+    }
+  }
+}
+
+.navigations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  &__list-top {
+    padding-top: 30px;
+  }
+
+  &__item-top {
+    margin: auto;
+  }
+
+  &__link-top {
+    color: $btn-dark;
+  }
+
+  &__list-bot {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__item-bot {
+    &:not(:last-of-type) {
+      margin-right: 20px;
+    }
+  }
+
+  &__link-bot {
+    color: $footer-grey;
+  }
 }

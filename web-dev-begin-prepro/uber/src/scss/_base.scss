@@ -54,8 +54,34 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     border: 1px solid transparent;
+
     &:hover {
         text-decoration: none;
         text-transform: uppercase;
+    }
+}
+
+.nav {
+    &-list {
+        display: flex;
+        margin: auto;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            padding: 0;
+        }
+    }
+
+    &-link {
+        text-transform: uppercase;
+
+        &:hover {
+            color: $txt-blue;
+        }
+
+        &:focus {
+            outline: 1px solid $txt-blue;
+        }
     }
 }
