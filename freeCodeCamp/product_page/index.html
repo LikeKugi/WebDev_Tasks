@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <img src="https://freepngimg.com/thumb/coffee/30202-1-coffee-logo-file.png" alt="coffee"
+                    id="header-img">
+                </img>
+                <nav id="nav-bar">
+                    <a href="#main" class="nav-link">Виды кофе</a>
+                    <a href="#art" class="nav-link">Латте арт</a>
+                    <a href="#connect" class="nav-link">Обратная связь</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="container">
+            <h2 class="main-title">Виды кофе</h2>
+            <div class="row">
+                <div class="card"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg"
+                        alt="espresso" class="card-img">
+                    <h3 class="card-title">espresso</h3>
+                </div>
+                <div class="card"><img
+                        src="https://coffeeaffection.com/wp-content/uploads/2021/02/does-a-cappuccino-have-caffeine.jpg"
+                        alt="cappuccino" class="card-img">
+                    <h3 class="card-title">cappuccino</h3>
+                </div>
+                <div class="card"><img
+                        src="https://sun9-58.userapi.com/impg/dYkrh_rLM5zIz-MiQk861JsADzlyXoA0PxMf3A/Q4mIPcjBNGE.jpg?size=540x540&quality=96&sign=5acb385a5d48273eb0dee7be7886d4eb&type=album"
+                        alt="latte" class="card-img">
+                    <h3 class="card-title">latte</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="box-video" id="art">
+        <div class="container">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/03l1x-bfKng"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="box-form" id="connect">
+        <div class="container">
+            <form action="https://www.freecodecamp.com/email-submit" method="post" id="form" class="form">
+                <label class="form-label" for="email">Введите ваш емэил, мы с Вами свяжемся: </label>
+                <input class="form-input" type="email" name="email" id="email" placeholder="enter your email">
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+:root {
+    --light: #ece0d1;
+    --coffee-light: #dbc1ac;
+    --coffee-medium: #967259;
+    --coffee-dark: #634832;
+    --dark: #38220f;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+button,
+link {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--coffee-light);
+    font-size: 1.7rem;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img {
+    max-height: 7.5rem;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.nav-link:hover,
+.nav-link:active {
+    background-color: var(--dark);
+    color: var(--coffee-light);
+    outline: 1px solid var(--coffee-medium);
+}
+
+.nav-link:not(:last-of-type) {
+    margin-right: 1.5rem;
+}
+
+.main {
+    margin-top: 7.5rem;
+    margin-bottom: 5rem;
+    padding-top: 4rem;
+}
+
+.main-title {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.row {
+    margin: 0 -1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 0 1rem;
+    padding: 1rem;
+    border: 1px solid var(--dark);
+    width: 100%;
+    max-width: 375px;
+}
+
+.card-img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+}
+
+.card-title {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box-video {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box-form {
+    margin-bottom: 3rem;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-label {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 798px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card:not(:last-of-type) {
+        margin-bottom: 1rem;
+    }
+
+    #video {
+        width: 100% !important;
+    }
+}
