@@ -99,7 +99,7 @@ document.querySelector('.list').addEventListener('click', function (e) {
                 console.log(goods);
                 for (let i = 0; i < goods.length; i++) {
                     console.log(goods[i][0])
-                    if (goods[i][0] == e.target.dataset.delete) {
+                    if (goods[i][0] === e.target.dataset.delete) {
                         goods.splice(i, 1);
                         console.log(goods)
                         localStorage.setItem('goods', JSON.stringify(goods));
@@ -109,4 +109,38 @@ document.querySelector('.list').addEventListener('click', function (e) {
                 Swal.fire('Удалено','Выбранный товар был удалён', 'success')
             }
     })
+})
+
+document.querySelector('.list').addEventListener('click', function (e) {
+    if (!e.target.dataset.goods) {
+        return
+    }
+
+    let goods = JSON.parse(localStorage.getItem('goods'));
+    for (let i = 0; i < goods.length; i++) {
+        if ((goods[i][3] > 0) && (goods[i][0] === e.target.dataset.goods)) {
+            console.log(goods)
+            goods[i].splice(3, 1, goods[i][3] - 1);
+            goods[i].splice(4, 1, goods[i][4] + 1);
+            localStorage.setItem('goods', JSON.stringify(goods));
+            update_goods();
+        }
+    }
+})
+
+document.querySelector('.cart').addEventListener('click', function (e) {
+    if (!e.target.dataset.delete) {
+        return
+    }
+
+    let goods = JSON.parse(localStorage.getItem('goods'));
+    for (let i = 0; i < goods.length; i++) {
+        if ((goods[i][4] > 0) && (goods[i][0] === e.target.dataset.delete)) {
+            console.log(goods)
+            goods[i].splice(3, 1, goods[i][3] + 1);
+            goods[i].splice(4, 1, goods[i][4] - 1);
+            localStorage.setItem('goods', JSON.stringify(goods));
+            update_goods();
+        }
+    }
 })
