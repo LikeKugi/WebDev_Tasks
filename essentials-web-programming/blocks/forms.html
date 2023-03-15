@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="second.html" method="post" id="questionnaire"></form>
+
+    <form action="index.html" method="POST">
+        <input type="text" name="person" id="person">
+        <label for="occup1">
+            <input type="radio" name="occupation" id="occup1">
+        </label>
+        <input type="radio" name="occupation" id="occup2">
+    </form>
+
+    <form action="index.html" method="POST">
+        <input type="checkbox" name="hobby" id="music"><label for="music">Музыка</label>
+        <input type="checkbox" name="hobby" id="egames"><label for="egames">Компьютерные игры</label>
+        <input type="checkbox" name="hobby" id="sport"><label for="sport">Спорт</label>
+        <input type="email" name="email" id="email">
+    </form>
+    <select name="age" id="age">
+        <option value=">18">до 18 лет</option>
+        <option value="18-30">от 18 до 30</option>
+        <option value="30-50">от 30 до 50</option>
+        <option value="50>">50 и старше</option>
+    </select>
+    <form action="post">
+        <input type="file" name="photo" id="photo">
+        <input type="date" name="date" id="date">
+        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
