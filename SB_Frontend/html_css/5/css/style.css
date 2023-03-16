@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.txt--white {
+  color: #FFFFFF;
+}
+
+.txt--black {
+  color: #000000;
+}
+
+.txt--gray {
+  color: #CACACA;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.page-content {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1800px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #FFFFFF;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+.header__box-find {
+  cursor: pointer;
+}
+.header__box-find:hover svg path {
+  stroke: #FF9900;
+}
+.header__box-find:hover svg rect {
+  fill: #FF9900;
+}
+.header__box-find:active {
+  outline: 2px solid #FF9900;
+}
+
+.nav__list {
+  display: flex;
+}
+.nav__item:not(:last-of-type) {
+  margin-right: 85px;
+}
+.nav__link {
+  display: inline-block;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  color: #000000;
+}
+.nav__link:hover {
+  color: inherit;
+  border-bottom: 2px solid #FF9900;
+}
+.nav__link:focus {
+  color: inherit;
+  border: 2px solid #FF9900;
+}
+.nav__link:active {
+  color: #E1670E;
+  border: 2px solid #E1670E;
+}/*# sourceMappingURL=style.css.map */
