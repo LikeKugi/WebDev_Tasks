@@ -10,6 +10,7 @@ body {
     }
 
     &-content {
+        padding-top: 50px;
         flex-grow: 1;
     }
 }
@@ -18,4 +19,39 @@ body {
     max-width: 1800px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    border-radius: 16px;
+
+    &--md {
+        padding: 25px 38px;
+        @include txt-bold(23px);
+    }
+
+    &--sm {
+        padding: 20px 38px;
+    }
+
+    &--lg {
+        padding: 19px 52px;
+    }
+
+    &--orange {
+        background-color: $orange-default;
+        color: $white;
+
+        &:hover {
+            background-color: $orange-light;
+        }
+
+        &:active {
+            background-color: $orange-dark;
+        }
+
+        &:focus {
+            background-color: $orange-light;
+        }
+    }
 }

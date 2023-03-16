@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
 }
 .page-content {
+  padding-top: 50px;
   flex-grow: 1;
 }
 
@@ -32,6 +33,35 @@ body {
   max-width: 1800px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  border-radius: 16px;
+}
+.btn--md {
+  padding: 25px 38px;
+  font-weight: 700;
+  font-size: 23px;
+}
+.btn--sm {
+  padding: 20px 38px;
+}
+.btn--lg {
+  padding: 19px 52px;
+}
+.btn--orange {
+  background-color: #FF9900;
+  color: #FFFFFF;
+}
+.btn--orange:hover {
+  background-color: #FFB84D;
+}
+.btn--orange:active {
+  background-color: #E1670E;
+}
+.btn--orange:focus {
+  background-color: #FFB84D;
 }
 
 .header {
@@ -82,4 +112,50 @@ body {
 .nav__link:active {
   color: #E1670E;
   border: 2px solid #E1670E;
+}
+
+.banner__wrapper {
+  border-radius: 32px;
+  padding: 100px 80px 30px;
+  background: url("../img/proj-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner__box-text {
+  max-width: 50%;
+  margin-bottom: 90px;
+}
+.banner__box-button {
+  margin-bottom: 55px;
+}
+.banner__box-swipers {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.banner__title {
+  margin-bottom: 24px;
+  font-weight: 800;
+  font-size: 70px;
+}
+.banner__text {
+  margin-bottom: 90px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.banner__swiper {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: #CACACA;
+  cursor: pointer;
+}
+.banner__swiper--active {
+  background-color: #FFFFFF;
+}
+.banner__swiper:not(:last-of-type) {
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */

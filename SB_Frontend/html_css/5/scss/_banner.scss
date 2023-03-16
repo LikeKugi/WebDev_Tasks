@@ -1,0 +1,55 @@
+.banner {
+    &__wrapper {
+        border-radius: 32px;
+        padding: 100px 80px 30px;
+        background: url('../img/proj-1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__box {
+        &-text {
+            max-width: 50%;
+            margin-bottom: 90px;
+        }
+
+        &-button {
+            margin-bottom: 55px;
+        }
+
+        &-swipers {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        @include txt-bolder(70px);
+    }
+
+    &__text {
+        margin-bottom: 90px;
+        @include txt-bold(24px);
+    }
+
+    &__swiper {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+        background-color: $gray-lighter;
+        cursor: pointer;
+
+        &--active {
+            background-color: $white;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 20px;
+        }
+    }
+}
