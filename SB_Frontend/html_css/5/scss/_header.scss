@@ -9,7 +9,9 @@
     }
 
     &__box {
-        &-logo {}
+        &-logo {
+            margin-right: 20%;
+        }
 
         &-find {
             cursor: pointer;

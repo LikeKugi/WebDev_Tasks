@@ -30,11 +30,13 @@
     &__title {
         margin-bottom: 24px;
         @include txt-bolder(70px);
+        @extend .txt--white;
     }
 
     &__text {
         margin-bottom: 90px;
         @include txt-bold(24px);
+        @extend .txt--white;
     }
 
     &__swiper {
