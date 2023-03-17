@@ -1,0 +1,76 @@
+.prof {
+    margin-bottom: 100px;
+
+    &__wrapper {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__left {
+        @include rounded(32px);
+        display: flex;
+        align-items: flex-end;
+        min-height: 622px;
+        max-width: 858px;
+        width: 100%;
+        background-image: url('../img/about/about.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.left {
+    &__wrapper {
+        @include rounded(32px);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color: $gray-light;
+    }
+
+    &__text {
+        @include txt-bold(16px);
+        @extend .txt--white;
+        max-width: 460px;
+        line-height: 32px;
+    }
+
+    &__btn {
+        display: block;
+        @include txt-bold(16px);
+    }
+}
+
+.right {
+    &__item {
+        @include rounded(32px);
+        display: flex;
+        padding: 65px 60px;
+        border: 1px solid $gray-lighter;
+        background-color: $white;
+
+        &--top {
+            margin-bottom: 32px;
+        }
+
+        &--bot {}
+    }
+
+    &__img {
+        margin-right: 50px;
+    }
+
+    &__title {
+        @include txt-bold(24px);
+        margin-bottom: 8px;
+    }
+
+    &__paragraph {
+        @include txt-norm(16px);
+        line-height: 32px;
+    }
+
+}
