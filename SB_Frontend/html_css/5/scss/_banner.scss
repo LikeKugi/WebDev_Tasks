@@ -1,6 +1,8 @@
 .banner {
+    margin-bottom: 50px;
+
     &__wrapper {
-        border-radius: 32px;
+        @include rounded(32px);
         padding: 100px 80px 30px;
         background: url('../img/proj-1.png');
         background-repeat: no-repeat;

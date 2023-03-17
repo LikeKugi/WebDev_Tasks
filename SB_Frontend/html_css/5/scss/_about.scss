@@ -1,0 +1,20 @@
+.about {
+    margin-bottom: 50px;
+
+    &__wrapper {
+        max-width: 1235px;
+        width: 100%;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        @include txt-norm(48px);
+        @extend .txt--black;
+    }
+
+    &__paragraph {
+        @include txt-norm(16px);
+        @extend .txt--black;
+        line-height: 32px;
+    }
+}

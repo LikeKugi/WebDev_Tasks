@@ -7,7 +7,7 @@ html {
   color: #FFFFFF;
 }
 
-.txt--black {
+.txt--black, .about__paragraph, .about__title {
   color: #000000;
 }
 
@@ -36,8 +36,8 @@ body {
 }
 
 .btn {
-  border: none;
   border-radius: 16px;
+  border: none;
 }
 .btn--md {
   padding: 25px 38px;
@@ -114,6 +114,9 @@ body {
   border: 2px solid #E1670E;
 }
 
+.banner {
+  margin-bottom: 50px;
+}
 .banner__wrapper {
   border-radius: 32px;
   padding: 100px 80px 30px;
@@ -158,4 +161,22 @@ body {
 }
 .banner__swiper:not(:last-of-type) {
   margin-right: 20px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+.about__wrapper {
+  max-width: 1235px;
+  width: 100%;
+}
+.about__title {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 48px;
+}
+.about__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }/*# sourceMappingURL=style.css.map */

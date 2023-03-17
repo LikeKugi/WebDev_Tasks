@@ -22,8 +22,8 @@ body {
 }
 
 .btn {
+    @include rounded(16px);
     border: none;
-    border-radius: 16px;
 
     &--md {
         padding: 25px 38px;
