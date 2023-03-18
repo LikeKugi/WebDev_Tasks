@@ -35,3 +35,12 @@ html {
 .txt--gray {
     color: $gray-lighter;
 }
+
+.title {
+    @include txt-norm(48px);
+    @extend .txt--black;
+}
+
+.subtitle {
+    @include txt-bold(24px);
+}

@@ -78,6 +78,30 @@ body {
             }
         }
 
+        &-gray {
+            background: none;
+            color: $black;
+            border: 1px solid $black;
+
+            &:hover {
+                border: 1px solid transparent;
+                color: $white;
+                background-color: $gray;
+            }
+
+            &:active {
+                border: 1px solid transparent;
+                color: $white;
+                background-color: $black;
+            }
+
+            &:focus {
+                border: 1px solid transparent;
+                color: $white;
+                background-color: $gray;
+            }
+        }
+
     }
 
 }

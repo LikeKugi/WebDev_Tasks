@@ -7,12 +7,22 @@ html {
   color: #FFFFFF;
 }
 
-.txt--black, .about__paragraph, .about__title {
+.txt--black, .working__text, .about__paragraph, .title {
   color: #000000;
 }
 
 .txt--gray {
   color: #CACACA;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 24px;
 }
 
 body {
@@ -80,6 +90,26 @@ body {
 .btn--nobg-orange:focus {
   border: 3px solid transparent;
   background-color: #FFB84D;
+}
+.btn--nobg-gray {
+  background: none;
+  color: #000000;
+  border: 1px solid #000000;
+}
+.btn--nobg-gray:hover {
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  background-color: #666666;
+}
+.btn--nobg-gray:active {
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.btn--nobg-gray:focus {
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  background-color: #666666;
 }
 
 .header {
@@ -193,8 +223,6 @@ body {
 }
 .about__title {
   margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 48px;
 }
 .about__paragraph {
   font-weight: 400;
@@ -256,13 +284,71 @@ body {
 .right__img {
   margin-right: 50px;
 }
-.right__title {
-  font-weight: 700;
-  font-size: 24px;
+.right__subtitle {
   margin-bottom: 8px;
 }
 .right__paragraph {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+}
+
+.working__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.working__title {
+  margin-bottom: 50px;
+}
+.working__tabs {
+  margin-bottom: 45px;
+}
+.working__box-text {
+  max-width: 758px;
+  width: 100%;
+}
+.working__box-img {
+  max-width: 870px;
+  width: 100%;
+}
+.working__box-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.working__article {
+  margin-bottom: 18px;
+}
+.working__subtitle {
+  line-height: 32px;
+}
+.working__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.working__btn:not(:last-of-type) {
+  margin-right: 32px;
+}
+
+.tabs__list {
+  display: flex;
+}
+.tabs__btn {
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.tabs__btn:hover {
+  color: #FF9900;
+}
+.tabs__btn:focus {
+  outline: 2px solid #FF9900;
+}
+.tabs__btn--active {
+  color: #E1670E;
+}
+.tabs__item:not(:last-of-type) {
+  margin-right: 85px;
 }/*# sourceMappingURL=style.css.map */
