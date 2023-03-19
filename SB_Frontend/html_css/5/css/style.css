@@ -293,6 +293,9 @@ body {
   line-height: 32px;
 }
 
+.working {
+  margin-bottom: 111px;
+}
 .working__wrapper {
   display: flex;
   justify-content: space-between;
@@ -360,6 +363,9 @@ body {
   margin-bottom: 32px;
 }
 
+.accordion {
+  transition: all 0.7s;
+}
 .accordion__details {
   padding: 40px 0;
   border-top: 1px solid #CACACA;
@@ -370,19 +376,19 @@ body {
   border-top: 1px solid #FF9900;
   border-bottom: 1px solid #FF9900;
 }
+.accordion__details:hover .accordion__box-title, .accordion__details:focus .accordion__box-title {
+  color: #FF9900;
+}
+.accordion__details:hover .accordion__box-title svg ellipse, .accordion__details:focus .accordion__box-title svg ellipse {
+  fill: #FF9900;
+}
+.accordion__details:hover .accordion__box-title svg path, .accordion__details:focus .accordion__box-title svg path {
+  fill: #FFFFFF;
+}
 .accordion__box-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.accordion__box-title:hover, .accordion__box-title:focus {
-  color: #FF9900;
-}
-.accordion__box-title:hover svg ellipse, .accordion__box-title:focus svg ellipse {
-  fill: #FF9900;
-}
-.accordion__box-title:hover svg path, .accordion__box-title:focus svg path {
-  fill: #FFFFFF;
 }
 .accordion__box-text {
   padding-top: 30px;
@@ -398,4 +404,12 @@ body {
 }
 .accordion__text:not(:last-child) {
   margin-bottom: 32px;
+}
+.accordion__hidden {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }/*# sourceMappingURL=style.css.map */
