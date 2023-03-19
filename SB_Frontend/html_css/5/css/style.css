@@ -363,9 +363,6 @@ body {
   margin-bottom: 32px;
 }
 
-.accordion {
-  transition: all 0.7s;
-}
 .accordion__details {
   padding: 40px 0;
   border-top: 1px solid #CACACA;
@@ -410,6 +407,5 @@ body {
   padding: 0 !important;
   overflow: hidden;
   opacity: 0;
-  width: 0;
   height: 0;
 }/*# sourceMappingURL=style.css.map */
