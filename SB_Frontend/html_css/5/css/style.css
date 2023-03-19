@@ -351,4 +351,51 @@ body {
 }
 .tabs__item:not(:last-of-type) {
   margin-right: 85px;
+}
+
+.faq {
+  padding-bottom: 100px;
+}
+.faq__title {
+  margin-bottom: 32px;
+}
+
+.accordion__details {
+  padding: 40px 0;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid #CACACA;
+  cursor: pointer;
+}
+.accordion__details:hover, .accordion__details:focus {
+  border-top: 1px solid #FF9900;
+  border-bottom: 1px solid #FF9900;
+}
+.accordion__box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion__box-title:hover, .accordion__box-title:focus {
+  color: #FF9900;
+}
+.accordion__box-title:hover svg ellipse, .accordion__box-title:focus svg ellipse {
+  fill: #FF9900;
+}
+.accordion__box-title:hover svg path, .accordion__box-title:focus svg path {
+  fill: #FFFFFF;
+}
+.accordion__box-text {
+  padding-top: 30px;
+}
+.accordion__title {
+  font-weight: 700;
+  font-size: 32px;
+}
+.accordion__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+.accordion__text:not(:last-child) {
+  margin-bottom: 32px;
 }/*# sourceMappingURL=style.css.map */
