@@ -24,6 +24,10 @@
                 & rect {
                     fill: $orange-default;
                 }
+
+                & circle {
+                    stroke: $orange-default;
+                }
             }
 
             &:active {
@@ -67,5 +71,22 @@
             color: $orange-dark;
             border: 2px solid $orange-dark;
         }
+    }
+}
+
+.find {
+    position: relative;
+    // overflow: hidden;
+
+    &__box {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        bottom: -30%;
+        display: flex;
+        padding: 18px 13px;
+        @include rounded(24px);
+        background: $white;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
     }
 }
