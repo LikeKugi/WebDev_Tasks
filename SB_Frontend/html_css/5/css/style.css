@@ -131,22 +131,6 @@ body {
 .header__box-logo {
   margin-right: 20%;
 }
-.header__box-find {
-  cursor: pointer;
-}
-.header__box-find:hover svg path {
-  stroke: #FF9900;
-}
-.header__box-find:hover svg rect {
-  fill: #FF9900;
-}
-.header__box-find:hover svg circle {
-  stroke: #FF9900;
-}
-.header__box-find:active {
-  outline: 2px solid #FF9900;
-}
-
 .nav__list {
   display: flex;
 }
@@ -174,6 +158,20 @@ body {
   color: #E1670E;
   border: 2px solid #E1670E;
 }
+.nav__toggler {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.nav__toggler:focus {
+  outline: 1px solid #FF9900;
+}
+.nav__toggler:active svg * {
+  fill: #E1670E;
+}
+.nav__collapse {
+  display: none;
+}
 
 .find {
   position: relative;
@@ -184,10 +182,36 @@ body {
   right: 0;
   bottom: -30%;
   display: flex;
-  padding: 18px 13px;
+  padding: 10px 18px;
   border-radius: 24px;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+}
+.find__controls {
+  display: flex;
+}
+.find__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.find__btn:hover svg path {
+  stroke: #FF9900;
+}
+.find__btn:hover svg rect {
+  fill: #FF9900;
+}
+.find__btn:hover svg circle {
+  stroke: #FF9900;
+}
+.find__btn:active {
+  outline: 2px solid #FF9900;
+}
+.find__field {
+  border: none;
+  border-bottom: 1px solid #CACACA;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .banner {
