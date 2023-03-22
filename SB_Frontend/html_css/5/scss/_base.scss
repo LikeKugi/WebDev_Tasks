@@ -43,6 +43,10 @@ body {
         padding: 19px 52px;
     }
 
+    &--bold {
+        @include txt-bold(16px);
+    }
+
     &--orange {
         background-color: $orange-default;
         color: $white;

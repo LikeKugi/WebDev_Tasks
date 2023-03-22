@@ -68,6 +68,10 @@ body {
 .btn--lg {
   padding: 19px 52px;
 }
+.btn--bold {
+  font-weight: 700;
+  font-size: 16px;
+}
 .btn--orange {
   background-color: #FF9900;
   color: #FFFFFF;
@@ -313,11 +317,6 @@ body {
   font-size: 16px;
   max-width: 460px;
   line-height: 32px;
-}
-.left__btn {
-  display: block;
-  font-weight: 700;
-  font-size: 16px;
 }
 
 .right__item {
