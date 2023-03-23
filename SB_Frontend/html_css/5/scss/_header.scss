@@ -77,15 +77,16 @@
     // overflow: hidden;
 
     &__box {
-        position: absolute;
+        position: fixed;
         z-index: 10;
-        right: 0;
-        bottom: -30%;
+        right: 2.5%;
+        top: -10%;
         display: flex;
         padding: 10px 18px;
         @include rounded(24px);
         background: $white;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+        box-shadow: 5px 5px 20px rgba(20, 20, 20, 0.12);
+        transition: top .5s;
     }
 
     &__controls {

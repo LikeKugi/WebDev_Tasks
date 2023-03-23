@@ -68,4 +68,10 @@
         opacity: 0;
         max-height: 0;
     }
+
+    &--active {
+        & svg {
+            transform: rotate(-45deg);
+        }
+    }
 }

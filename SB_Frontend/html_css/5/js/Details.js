@@ -13,6 +13,7 @@ class Details {
     console.log(targetEl);
     let textEl = targetEl.querySelector(".accordion__box-text");
     console.log(textEl);
+    targetEl.classList.toggle("accordion--active");
     textEl.classList.toggle("accordion__hidden");
     textEl.style.height = textEl.scrollHeight + "px";
     targetEl.querySelector(".accordion__box-title svg").webkitTransform +=

@@ -32,6 +32,10 @@ textarea {
   transition: all 0.4s;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #E5E5E5;
 }
@@ -181,15 +185,16 @@ body {
   position: relative;
 }
 .find__box {
-  position: absolute;
+  position: fixed;
   z-index: 10;
-  right: 0;
-  bottom: -30%;
+  right: 2.5%;
+  top: -10%;
   display: flex;
   padding: 10px 18px;
   border-radius: 24px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+  box-shadow: 5px 5px 20px rgba(20, 20, 20, 0.12);
+  transition: top 0.5s;
 }
 .find__controls {
   display: flex;
@@ -457,6 +462,9 @@ body {
   overflow: hidden;
   opacity: 0;
   max-height: 0;
+}
+.accordion--active svg {
+  transform: rotate(-45deg);
 }
 
 .footer {
