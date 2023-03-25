@@ -35,6 +35,7 @@ class Burger {
         this.navList.classList.add("nav__hidden");
       } else {
         this.navList.classList.remove("nav__hidden");
+        this.navList.style.height = "auto";
       }
     });
   }
