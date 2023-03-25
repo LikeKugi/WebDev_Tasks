@@ -7,17 +7,17 @@
         align-items: center;
         padding: 14px 0;
     }
-
-    &__box {
-        &-logo {
-            margin-right: 20%;
-        }
-    }
 }
 
 .nav {
+
+    &__close {
+        margin-bottom: 10%;
+    }
+
     &__list {
         display: flex;
+        overflow: hidden;
     }
 
     &__item {
@@ -68,6 +68,14 @@
     &__collapse {
         display: none;
     }
+
+    &__hidden {
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        position: absolute !important;
+        height: 0 !important;
+    }
 }
 
 .find {
@@ -78,6 +86,8 @@
         z-index: 10;
         right: 2.5%;
         top: -10%;
+        width: 100%;
+        max-width: min(539px, 80vw);
         display: flex;
         padding: 10px 18px;
         @include rounded(24px);
@@ -115,8 +125,35 @@
     }
 
     &__field {
+        display: block;
+        width: 100%;
         border: none;
         border-bottom: 1px solid $gray-lighter;
         @include txt-norm(18px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        &__nav {
+            order: -1;
+        }
+    }
+
+    .nav {
+        &__collapse {
+            display: block;
+        }
+
+        &__list {
+            z-index: 5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: min(420px, 100vw);
+            padding: 40px 50px;
+            flex-direction: column;
+            background-color: $white;
+        }
     }
 }
