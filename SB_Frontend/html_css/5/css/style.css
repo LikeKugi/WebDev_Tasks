@@ -51,11 +51,16 @@ body {
 }
 
 .container {
-  max-width: 1800px;
+  max-width: min(1800px, 100vw);
   padding: 0 15px;
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    padding: 0 50px;
+  }
+}
 .btn {
   border-radius: 16px;
   border: none;
@@ -136,12 +141,13 @@ body {
   align-items: center;
   padding: 14px 0;
 }
-.header__box-logo {
-  margin-right: 20%;
-}
 
+.nav__close {
+  margin-bottom: 10%;
+}
 .nav__list {
   display: flex;
+  overflow: hidden;
 }
 .nav__item:not(:last-of-type) {
   margin-right: 85px;
@@ -181,6 +187,13 @@ body {
 .nav__collapse {
   display: none;
 }
+.nav__hidden {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  height: 0 !important;
+}
 
 .find {
   position: relative;
@@ -190,6 +203,8 @@ body {
   z-index: 10;
   right: 2.5%;
   top: -10%;
+  width: 100%;
+  max-width: min(539px, 80vw);
   display: flex;
   padding: 10px 18px;
   border-radius: 24px;
@@ -218,12 +233,32 @@ body {
   outline: 2px solid #FF9900;
 }
 .find__field {
+  display: block;
+  width: 100%;
   border: none;
   border-bottom: 1px solid #CACACA;
   font-weight: 400;
   font-size: 18px;
 }
 
+@media screen and (max-width: 1200px) {
+  .header__nav {
+    order: -1;
+  }
+  .nav__collapse {
+    display: block;
+  }
+  .nav__list {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: min(420px, 100vw);
+    padding: 40px 50px;
+    flex-direction: column;
+    background-color: #FFFFFF;
+  }
+}
 .banner {
   margin-bottom: 50px;
 }
@@ -499,6 +534,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   display: block;
+  box-sizing: border-box;
   width: 100%;
   border: none;
   padding: 14px 24px;
