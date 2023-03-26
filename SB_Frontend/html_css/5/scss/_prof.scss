@@ -66,3 +66,12 @@
     }
 
 }
+
+@media screen and (max-width: 1200px) {
+    .prof {
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+
+}

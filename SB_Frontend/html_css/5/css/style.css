@@ -258,6 +258,12 @@ body {
     flex-direction: column;
     background-color: #FFFFFF;
   }
+  .nav__item:not(:last-of-type) {
+    margin-bottom: 60px;
+  }
+  .nav__link {
+    font-size: 24px;
+  }
 }
 .banner {
   margin-bottom: 50px;
@@ -308,6 +314,18 @@ body {
   margin-right: 20px;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 2048px) {
+  .banner__title {
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .banner__text {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
 .about {
   margin-bottom: 50px;
 }
@@ -324,6 +342,11 @@ body {
   line-height: 32px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .about {
+    margin-bottom: 60px;
+  }
+}
 .prof {
   margin-bottom: 100px;
 }
@@ -382,6 +405,11 @@ body {
   line-height: 32px;
 }
 
+@media screen and (max-width: 1200px) {
+  .prof__wrapper {
+    flex-direction: column;
+  }
+}
 .working {
   margin-bottom: 111px;
 }
