@@ -58,8 +58,14 @@
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 2048px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
     .banner {
+        &__box {
+            &-text {
+                max-width: 100%;
+            }
+        }
+
         &__title {
             @include txt-bolder(60px);
             margin-bottom: 16px;
@@ -68,6 +74,30 @@
         &__text {
             margin-bottom: 60px;
             @include txt-bold(20px);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        &__box {
+            &-text {
+                max-width: 100%;
+            }
+        }
+
+        &__wrapper {
+            padding: 160px 40px 30px;
+        }
+
+        &__title {
+            @include txt-bolder(50px);
+            margin-bottom: 16px;
+        }
+
+        &__text {
+            margin-bottom: 60px;
+            @include txt-bold(18px);
         }
     }
 }

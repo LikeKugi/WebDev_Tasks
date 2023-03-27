@@ -124,3 +124,29 @@
     max-width: 570px;
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        &__article {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &__wrapper {
+            flex-direction: column-reverse;
+            justify-content: start;
+            align-items: flex-start;
+        }
+    }
+
+    .f-nav {
+        display: none;
+    }
+
+    .f-form {
+        margin-bottom: 85px;
+    }
+}

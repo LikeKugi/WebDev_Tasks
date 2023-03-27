@@ -75,3 +75,11 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .accordion {
+        &__title {
+            @include txt-bold(20px);
+        }
+    }
+}
