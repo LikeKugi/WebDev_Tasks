@@ -23,6 +23,14 @@ body {
     }
 }
 
+@media screen and (max-width:767px) {
+    .page {
+        &-content {
+            padding-top: 30px;
+        }
+    }
+}
+
 .container {
     max-width: min(1800px, 100vw);
     padding: 0 15px;
@@ -122,4 +130,13 @@ body {
 
     }
 
+}
+
+@media screen and (max-width: 767px) {
+    .btn {
+        &--md {
+            padding: 13px 28px;
+            @include txt-bold(12px);
+        }
+    }
 }

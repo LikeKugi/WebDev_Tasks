@@ -78,7 +78,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .banner {
         &__box {
             &-text {
@@ -98,6 +98,42 @@
         &__text {
             margin-bottom: 60px;
             @include txt-bold(18px);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        &__wrapper {
+            padding: 60px 22px 15px;
+        }
+
+        &__box {
+            &-text {
+                max-width: 100%;
+                margin-bottom: 32px;
+            }
+
+            &-button {
+                text-align: center;
+            }
+        }
+
+        &__title {
+            @include txt-bolder(20px);
+            margin-bottom: 6px;
+            text-align: center;
+        }
+
+        &__text {
+            margin-bottom: 0;
+            @include txt-bold(12px);
+            text-align: center;
+        }
+
+        &__swiper {
+            width: 10px;
+            height: 10px;
         }
     }
 }
