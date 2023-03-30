@@ -150,3 +150,21 @@
         margin-bottom: 85px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .footer {
+        &__box {
+            &-f-nav {
+                margin: 0;
+            }
+        }
+    }
+
+    .f-left {
+        margin: 0 auto;
+    }
+
+    .f-form {
+        margin-bottom: 25px;
+    }
+}

@@ -138,5 +138,23 @@ body {
             padding: 13px 28px;
             @include txt-bold(12px);
         }
+
+        &--sm {
+            padding: 12px 44px;
+            @include txt-bold(12px);
+        }
+
+        &--nobg {
+            &-orange {
+                color: $orange-default;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $white;
+                }
+            }
+        }
+
     }
 }

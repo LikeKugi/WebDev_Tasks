@@ -47,3 +47,13 @@ textarea {
 .subtitle {
     @include txt-bold(24px);
 }
+
+@media screen and (max-width: 625px) {
+    .title {
+        @include txt-norm(24px);
+    }
+
+    .subtitle {
+        @include txt-bold(18px);
+    }
+}

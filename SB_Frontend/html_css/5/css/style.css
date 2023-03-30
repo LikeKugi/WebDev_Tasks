@@ -28,6 +28,16 @@ textarea {
   font-size: 24px;
 }
 
+@media screen and (max-width: 625px) {
+  .title {
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
 * {
   transition: all 0.4s;
 }
@@ -142,6 +152,17 @@ body {
     padding: 13px 28px;
     font-weight: 700;
     font-size: 12px;
+  }
+  .btn--sm {
+    padding: 12px 44px;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  .btn--nobg-orange {
+    color: #FF9900;
+  }
+  .btn--nobg-orange:hover, .btn--nobg-orange:active, .btn--nobg-orange:focus {
+    color: #FFFFFF;
   }
 }
 .header {
@@ -476,6 +497,37 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 628px) {
+  .prof__left {
+    min-height: 400px;
+    background-size: 100% 50%;
+    background-position: top;
+  }
+  .left__wrapper {
+    padding: 8px 0 0;
+    margin-bottom: 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+  }
+  .left__text {
+    color: #000000;
+  }
+  .right__item {
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  .right__img {
+    max-height: 50px;
+    margin-bottom: 13px;
+  }
+  .right__img img {
+    height: 50px;
+    object-fit: cover;
+  }
+}
 .working {
   margin-bottom: 111px;
 }
@@ -541,12 +593,20 @@ body {
   margin-right: 85px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .working {
     margin-bottom: 111px;
   }
   .working__wrapper {
     flex-direction: column-reverse;
+  }
+  .working__box-img {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tabs__item:not(:last-of-type) {
+    margin-right: auto;
   }
 }
 .faq {
@@ -611,6 +671,12 @@ body {
   .accordion__title {
     font-weight: 700;
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .accordion__title {
+    font-weight: 700;
+    font-size: 14px;
   }
 }
 .footer {
@@ -725,5 +791,16 @@ body {
   }
   .f-form {
     margin-bottom: 85px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer__box-f-nav {
+    margin: 0;
+  }
+  .f-left {
+    margin: 0 auto;
+  }
+  .f-form {
+    margin-bottom: 25px;
   }
 }/*# sourceMappingURL=style.css.map */

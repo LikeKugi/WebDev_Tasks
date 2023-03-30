@@ -85,12 +85,28 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .working {
         margin-bottom: 111px;
 
         &__wrapper {
             flex-direction: column-reverse;
+        }
+
+        &__box {
+            &-img {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tabs {
+        &__item {
+            &:not(:last-of-type) {
+                margin-right: auto;
+            }
         }
     }
 }

@@ -83,3 +83,11 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .accordion {
+        &__title {
+            @include txt-bold(14px);
+        }
+    }
+}
