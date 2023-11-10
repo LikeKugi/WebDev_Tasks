@@ -1,0 +1,57 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.page {
+  min-height: 100vw;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+.side {
+  padding: 0;
+  border-inline-end: 1px solid crimson;
+}
+.nav {
+  position: sticky;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  min-width: 15rem;
+  background-color: #fff;
+
+  header {
+    padding-block: 1rem;
+    padding-inline-start: 0.5rem;
+    border-block-end: 1px solid crimson;
+  }
+  &__list {
+    margin: 0;
+    padding-block: 2rem;
+    padding-inline: 0;
+  }
+  &__item {
+    padding: 0;
+    list-style-type: none;
+  }
+  &-link {
+    display: block;
+    padding-block: 0.5rem;
+    padding-inline-start: 1rem;
+    text-decoration: none;
+    &:not(:last-of-type) {
+      margin-block-end: 1.5rem;
+    }
+    &:hover {
+      background-color: #fafaaf;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  html {
+    font-size: 10px;
+  }
+}
